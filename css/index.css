@@ -1,0 +1,54 @@
+#index-throne {
+    width: 300px;
+    height: auto;
+}
+
+#index-got {
+    width: 200px;
+    height: auto;
+}
+
+.index-card {
+    width: 300px;
+    border: none;
+    box-shadow: var(--card-shadow);
+    border-radius: 0.5rem;
+}
+
+.index-card h4 {
+    color: white;
+}
+
+#card-quizes,
+#card-games {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+#card-quizes {
+    background-image: url('../img/index/got-card-quizes.jpg');
+}
+
+#card-games {
+    background-image: url('../img/index/got-card-games.jpg');
+}
+
+.index-card-icon {
+    margin: 0.5rem 0 0.5rem 0;
+    width: 100px;
+    height: 100px;
+}
+
+.buttons-container {
+    width: 50% !important;
+}
+
+.my-btns {
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+#got-westeros-crest {
+    width: 350px;
+}

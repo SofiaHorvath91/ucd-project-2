@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+@import url('index.css');
+@import url('hangman.css');
+@import url('memorygame.css');
+@import url('quiz.css');
+
+:root {
+  --darkgray: #212529;
+  --golden: #ffc107;
+  --hover-shadow: 0 0 10px black;
+  --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --red-text-border: -2px 0 red, 0 2px red, 2px 0 red, 0 -2px red;
+  --black-text-border: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  --gold-text-border: -2px 0 #ffc107, 0 2px #ffc107, 2px 0 #ffc107,
+    0 -2px #ffc107;
+  --h4-custom: calc(1.275rem + 0.3vw) !important;
+  --facebook: #3b5998;
+  --twitter: #55acee;
+  --email: #777777;
+  --whatsapp: #25d366;
+}
+
+/* Body */
+
+* {
+  box-sizing: border-box;
+  font-family: 'IM Fell French Canon SC', serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  flex-wrap: wrap;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+p {
+  font-size: 18px;
+}
+
+hr {
+  margin-top: 0 !important;
+}
+
+.background {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url('../img/got-bg.jpg');
+}
+
+.container-row {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.center-container {
+  margin: auto;
+  display: flex;
+  width: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.gold-text-border {
+  text-shadow: var(--gold-text-border);
+}
+
+.black-text-border {
+  text-shadow: var(--black-text-border);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Navbar => Source / Inspiration : https://getbootstrap.com/docs/4.0/components/navbar/ */
+
+nav {
+  margin-bottom: 0.5rem;
+}
+
+.navbar,
+.navbar-container {
+  width: 100%;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.navbar li a {
+  color: var(--darkgray) !important;
+  font-size: 30px;
+  margin: 0px 10px 0px 10px;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: black !important;
+  text-shadow: -1px 0 var(--golden), 0 1px var(--golden), 1px 0 var(--golden), 0 -1px var(--golden);
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+  position: relative;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.logo-mobile {
+  float: left;
+  display: none;
+}
+
+.dropdown-menu {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.dropdown-menu a:nth-child(2) {
+  margin-top: 10px !important;
+}
+
+.dropdown-item {
+  font-size: 22px !important;
+}
+
+.dropdown-item,
+.dropdown-item:focus {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px white, inset 0 0 10px var(--darkgray);
+  font-weight: bold;
+}
+
+.golden-label,
+.dropdown-item:hover {
+  background-color: var(--golden);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px var(--golden), inset 0 0 10px var(--darkgray);
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.navbar-toggler {
+  display: block;
+  margin: 00px 10px 0px 0px;
+  background-color: var(--darkgray) !important;
+  float: right;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--darkgray);
+  height: auto;
+  display: block;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 1rem 0 1rem 0;
+}
+
+.footer p {
+  font-size: 12px !important;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin: auto;
+}
+
+.footer p a {
+  color: white !important;
+}
+
+/* Footer Social Sharing buttons => Source / Inspiration : https://sharingbuttons.io/ */
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial,sans-serif';
+  border: 0.1em solid white;
+}
+
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block;
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: white;
+  margin: 0 0.5em 0 0.5em;
+}
+
+.resp-sharing-button__icon {
+  fill: white;
+  stroke: none;
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top;
+}
+
+.resp-sharing-button svg {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.facebook:hover,
+.facebook:active {
+  background-color: var(--facebook);
+  border-color: var(--facebook);
+}
+
+.twitter:hover,
+.twitter:active {
+  background-color: var(--twitter);
+  border-color: var(--twitter);
+}
+
+.email:hover,
+.email:active {
+  background-color: var(--email);
+  border-color: var(--email);
+}
+
+.whatsapp:hover,
+.whatsapp:active {
+  background-color: var(--whatsapp);
+  border-color: var(--whatsapp);
+}
+
+/* Resize */
+
+@media screen and (max-width: 800px) {
+  #memorycards-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-subtitle {
+    font-size: 16px;
+  }
+
+  #got-westeros-crest {
+    width: 250px;
+  }
+
+  #quiz-starter-img {
+    width: 300px;
+  }
+  
+  .quiz-card{
+    width: 280px;
+    padding:0 0.2rem 0 0.2rem;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991.5px) {
+  .logo-mobile {
+    display: flex;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .navbar-mobile {
+    width: 100%;
+    display: block;
+  }
+
+  .navbar li a {
+    font-size: 20px !important;
+  }
+
+  .dropdown-item {
+    font-size: 14px !important;
+  }
+}
