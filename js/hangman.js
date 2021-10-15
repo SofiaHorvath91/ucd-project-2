@@ -56,8 +56,12 @@ $('#hangman-exit-btn').click(function () {
     location.reload();
 });
 
-window.addEventListener('keydown', e => {
-    if (e.keyCode >= 65 && e.keyCode <= 90) {
+window.addEventListener('keypress', e => {
+    if(isMobileDevice()){
+        window.prompt();
+    }
+    
+    if (e.key.length == 1) {
         const letter = e.key;
         if (selectedWord.includes(letter)) {
             if (!correctletters.includes(letter)) {
@@ -117,3 +121,7 @@ function updateWrongLetters(letter) {
         popup.style.display = 'flex';
     }
 }
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
