@@ -31,6 +31,10 @@ var imgIndex = 0;
 
 $(function () {
     showWord();
+
+    if(isMobileDevice()){
+        window.prompt();
+    }
 });
 
 $('#hangman-start-btn').click(function () {
@@ -56,11 +60,7 @@ $('#hangman-exit-btn').click(function () {
     location.reload();
 });
 
-window.addEventListener('keypress', e => {
-    if(isMobileDevice()){
-        window.prompt();
-    }
-    
+window.addEventListener('keypress', e => {  
     if (e.key.length == 1) {
         const letter = e.key;
         if (selectedWord.includes(letter)) {
