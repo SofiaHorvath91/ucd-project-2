@@ -1,0 +1,66 @@
+HOUSE LANNISTER <br>
+Sigil : A golden lion rampant on a crimson field<br>
+Words : "Hear Me Roar"<br>
+Common saying : "A Lannister always pays his debts."<br>
+Seat : Casterly Rock<br>
+Region : The Westerlands<br>
+Titles : Lords of Casterly Rock / Shields of Lannisport / Wardens of the West
+***
+HOUSE TARGARYEN <br>
+Sigil : A red three-headed dragon on a black field<br>
+Words : "Fire and Blood"<br>
+Common saying : "Madness and greatness are two sides of the same coin and every time a new Targaryen is born, the gods toss the coin."<br>
+Seat : Dragonstone<br>
+Region : Seven Kingdom (formerly)<br>
+Titles : Lords of Dragonstone / Dragonlords / Kings of the Andals and the First Men (formerly)
+***
+HOUSE TYRELL <br>
+Sigil : A golden rose on a green field<br>
+Words : "Growing Strong"<br>
+Seat : Highgarden<br>
+Region : The Reach<br>
+Titles : Lords of Highgarden / Wardens of the South
+***
+HOUSE GREYJOY <br>
+Sigil : A golden kraken on a black field<br>
+Words : "We Do Not Sow"<br>
+Common saying : "What is dead may never die."<br>
+Seat : Salt Throne, Pyke<br>
+Region : Iron Islands<br>
+Titles : Lords of the Iron Islands / Kings of Salt and Rock
+***
+HOUSE MARTELL <br>
+Sigil : A red sun pierced by a gold spear on an orange field<br>
+Words : "Unbowed, Unbent, Unbroken"<br>
+Seat : Sunspear<br>
+Region : Dorne<br>
+Titles : Lords of Sunspear / Princes of Dorne
+***
+HOUSE TULLY <br>
+Sigil : A silver trout leaping on a red and blue background<br>
+Words : "Family, Duty, Honor" <br>
+Seat : Riverrun<br>
+Region : The Riverlands<br>
+Titles : Lords of Riverrun / Lords Paramount of the Trident
+***
+HOUSE ARRYN <br>
+Sigil : A white falcon volant and crescent moon on a blue field<br>
+Words : "As High as Honor"<br>
+Seat : The Eyrie<br>
+Region : The Vale of Arryn<br>
+Titles : Lords of the Eyrie / Defenders of the Vale / Wardens of the East
+***
+HOUSE BARATHEON <br>
+Sigil : A crowned black stag salient on a gold field<br>
+Words : "Ours is the Fury"<br>
+Seat : Storm's End<br>
+Region : The Stormlands<br>
+Titles : Lords of Storm's End / Kings of the Andals and the First Men (formerly)
+***
+HOUSE STARK <br>
+Sigil : A grey direwolf's head facing sinister on a dark gray field<br>
+Words : "Winter Is Coming"<br>
+Common saying : "The North remembers."<br>
+Seat : Winterfell<br>
+Region : The North<br>
+Titles : Lords of Winterfell / Kings & Queens in the North / Wardens of the North

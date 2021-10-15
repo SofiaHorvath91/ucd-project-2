@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Games of GoT</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="row container-row background" id="background-index">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="center-container navbar-mobile">
+                <div class="navbar-logo logo-mobile">
+                    <a href="index.html">
+                        <img class="logo-img" src="img/logo.png" title="Home" alt="Site Logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">QUIZES</a>
+                        </li>
+                        <div class="navbar-logo logo-desktop">
+                            <a href="index.html">
+                                <img class="logo-img" src="img/logo.png" title="Home" alt="Site Logo">
+                            </a>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="gamesDropdownMenu" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                GAMES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="gamesDropdownMenu">
+                                <a class="dropdown-item" href="hangman.html">Hangman</a>
+                                <a class="dropdown-item" href="memorygame.html">Memory Game</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <h1 class="center-text">When you play the</h1>
+        <div class="row container-row">
+            <div class="center-container">
+                <img id="index-got" src="img/index/got-logo.png">
+            </div>
+        </div>
+        <h1 class="center-text">you win or you die...</h1>
+    </header>
+
+    <main>
+        <div class="row container-row">
+            <div class="center-container">
+                <img id="index-throne" src="img/index/got-throne.png">
+            </div>
+            <h2 class="center-text gold-text-border"><strong>...but when you play the Games of GoT,
+                    <br>you win or you just have fun!</strong></h2>
+        </div>
+        <div class="row container-row center-container buttons-container mt-4 mb-2">
+            <div class="center-container mt-1">
+                <div class="index-card" id="card-quizes">
+                    <article>
+                        <header>
+                            <h3 class="mt-3 gold-text-border"><strong>QUIZES</strong></h3>
+                            <img src="img/index/got-quizes-icon.png" class="index-card-icon">
+                        </header>
+                        <section class="mb-2">
+                            <h4 class="mt-3 mb-3 black-text-border card-subtitle">
+                                <strong>Are you as omniscient<br>as the Three Eyed Raven?</strong>
+                            </h4>
+                            <a class="btn btn-outline-warning btn-lg my-btns" href="quiz.html#quiz-1-card">
+                                <strong>Books vs Show</strong>
+                            </a>
+                            <a class="btn btn-outline-warning btn-lg my-btns" href="quiz.html#quiz-2-card">
+                                <strong>Got the GoT?</strong>
+                            </a>
+                        </section>
+                    </article>
+                </div>
+            </div>
+            <div class="center-container mt-1">
+                <div class="index-card" id="card-games">
+                    <article>
+                        <header>
+                            <h3 class="mt-3 gold-text-border"><strong>GAMES</strong></h3>
+                            <img src="img/index/got-games-icon.png" class="index-card-icon">
+                        </header>
+                        <section class="mb-2">
+                            <h4 class="mt-3 mb-3 black-text-border card-subtitle"><strong>Try your luck, why not?
+                                    <br>Valar morghulis!</strong></h4>
+                            <a class="btn btn-outline-warning btn-lg my-btns" href="hangman.html">
+                                <strong>Hangman Game</strong>
+                            </a>
+                            <a class="btn btn-outline-warning btn-lg my-btns" href="memorygame.html">
+                                <strong>Memory Game</strong>
+                            </a>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="row container-row mt-5">
+            <h2 class="center-text gold-text-border"><strong>GOOD WANDERING IN WESTEROS!</strong></h2>
+            <div class="row container-row mt-5 mb-5">
+                <div class="center-container">
+                    <img id="got-westeros-crest" src="img/index/got-westeros-crest.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="row container-row">
+            <div class="center-container">
+            </div>
+        </div>
+        <div class="row container-row">
+            <div class="center-container">
+                <!-- Sharingbutton Facebook -->
+                <a class="resp-sharing-button__link"
+                    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsofiahorvath91.github.io%2Fucd-project-1%2F"
+                    target="_blank" rel="noopener" aria-label="">
+                    <div class="resp-sharing-button facebook">
+                        <div aria-hidden="true" class="resp-sharing-button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Sharingbutton Twitter -->
+                <a class="resp-sharing-button__link"
+                    href="https://twitter.com/intent/tweet/?text=Dal%C3%AD&#x27;s%20Surreal%20Dreams&amp;url=https%3A%2F%2Fsofiahorvath91.github.io%2Fucd-project-1%2F"
+                    target="_blank" rel="noopener" aria-label="">
+                    <div class="resp-sharing-button twitter">
+                        <div aria-hidden="true" class="resp-sharing-button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Sharingbutton E-Mail -->
+                <a class="resp-sharing-button__link"
+                    href="mailto:?subject=Dal%C3%AD&#x27;s%20Surreal%20Dreams&amp;body=https%3A%2F%2Fsofiahorvath91.github.io%2Fucd-project-1%2F"
+                    target="_self" rel="noopener" aria-label="">
+                    <div class="resp-sharing-button email">
+                        <div aria-hidden="true" class="resp-sharing-button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Sharingbutton WhatsApp -->
+                <a class="resp-sharing-button__link"
+                    href="whatsapp://send?text=Dal%C3%AD&#x27;s%20Surreal%20Dreams%20https%3A%2F%2Fsofiahorvath91.github.io%2Fucd-project-1%2F"
+                    target="_blank" rel="noopener" aria-label="">
+                    <div class="resp-sharing-button whatsapp">
+                        <div aria-hidden="true" class="resp-sharing-button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
