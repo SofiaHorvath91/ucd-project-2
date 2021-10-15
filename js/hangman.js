@@ -3,6 +3,7 @@ var hangmanGameContainer = document.getElementById("hangman-game-container");
 var word = document.getElementById("hangman-word");
 var hangmanImg = document.getElementById("hangman-img");
 var wrongLettersP = document.getElementById("wrong-letters");
+var playerLetterMobile = document.getElementById("hangman-game-mobile");
 const popup = document.getElementById('hangman-popup-container');
 const finalMessage = document.getElementById('hangman-final-message');
 var hangmanResultImg = document.getElementById("hangman-result-img");
@@ -29,19 +30,21 @@ const wrongLetters = [];
 
 var imgIndex = 0;
 
-function focus() {
-    $('#fake-input').focus();
-}
-
 $('#hangman-start-btn').click(function () {
     hangmanStarterDiv.classList.add('hidden');
     hangmanGameContainer.classList.remove('hidden');
 
     if(isMobileDevice()){
-        window.addEventListener("touchstart", focus, true);
+        playerLetterMobile.classList.remove('hidden');
     }
 
     showWord();
+});
+
+$('#player-letter-mobile').on('input',function(){
+    const letter = $(this).val();
+    checkLetter(letter);
+    this.value="";
 });
 
 $('#hangman-newgame-btn').click(function () {
@@ -53,42 +56,29 @@ $('#hangman-newgame-btn').click(function () {
     hangmanImg.src = "img/hangman/" + imgIndex.toString() + ".png";
     selectedWord = words[Math.floor(Math.random() * words.length)];
 
+    if(isMobileDevice() && playerLetterMobile.classList.contains('hidden')){
+        playerLetterMobile.classList.remove('hidden');
+    }
+
     showWord();
 
     popup.style.display = 'none';
 });
 
 $('#hangman-exit-btn').click(function () {
-    if(isMobileDevice()){
-        window.removeEventListener("touchstart", focus, true);
-    }
     location.reload();
 });
 
-window.addEventListener('keypress', e => {  
-    if (e.key.length == 1) {
-        const letter = e.key;
-        if (selectedWord.includes(letter)) {
-            if (!correctletters.includes(letter)) {
-                correctletters.push(letter);
-                showWord();
-            } else {
-                showNotification();
-            }
-        }
-        else {
-            if (!wrongLetters.includes(letter)) {
-                wrongLetters.push(letter);
-                updateWrongLetters(letter);
-            } else {
-                showNotification();
-            }
-        }
-    }
+window.addEventListener('keydown', e => {  
+    const letter = e.key;
+    checkLetter(letter);
 });
 
-function showWord() {
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
+function showWord() {
     word.innerHTML =
         `${selectedWord
             .split('')
@@ -109,12 +99,36 @@ function showWord() {
     }
 }
 
+function isLetter(char) {
+    return (/[a-zA-Z]/).test(char)
+}
+
+function checkLetter(letter){
+    if (isLetter(letter)) {
+        if (selectedWord.includes(letter)) {
+            if (!correctletters.includes(letter)) {
+                correctletters.push(letter);
+                showWord();
+            } else {
+                showNotification();
+            }
+        }
+        else {
+            if (!wrongLetters.includes(letter)) {
+                wrongLetters.push(letter);
+                updateWrongLetters(letter);
+            } else {
+                showNotification();
+            }
+        }
+    }
+}
+
 function showNotification() {
     alert("You have already entered this letter!");
 }
 
 function updateWrongLetters(letter) {
-
     imgIndex++;
     hangmanImg.src = "img/hangman/" + imgIndex.toString() + ".png";
     if (imgIndex < 9) {
@@ -126,7 +140,3 @@ function updateWrongLetters(letter) {
         popup.style.display = 'flex';
     }
 }
-
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
