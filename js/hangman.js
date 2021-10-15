@@ -29,17 +29,19 @@ const wrongLetters = [];
 
 var imgIndex = 0;
 
-$(function () {
-    showWord();
-});
+function focus() {
+    $('#fake-input').focus();
+}
 
 $('#hangman-start-btn').click(function () {
     hangmanStarterDiv.classList.add('hidden');
     hangmanGameContainer.classList.remove('hidden');
 
     if(isMobileDevice()){
-        window.prompt();
+        window.addEventListener("touchstart", focus, true);
     }
+
+    showWord();
 });
 
 $('#hangman-newgame-btn').click(function () {
@@ -57,6 +59,9 @@ $('#hangman-newgame-btn').click(function () {
 });
 
 $('#hangman-exit-btn').click(function () {
+    if(isMobileDevice()){
+        window.removeEventListener("touchstart", focus, true);
+    }
     location.reload();
 });
 
@@ -102,11 +107,6 @@ function showWord() {
         hangmanResultImg.src = "img/got-winner.png";
         popup.style.display = 'flex';
     }
-    else{
-        if(isMobileDevice()){
-            window.prompt();
-        }
-    }
 }
 
 function showNotification() {
@@ -119,9 +119,6 @@ function updateWrongLetters(letter) {
     hangmanImg.src = "img/hangman/" + imgIndex.toString() + ".png";
     if (imgIndex < 9) {
         wrongLettersP.innerHTML += letter.toString() + " ";
-        if(isMobileDevice()){
-            window.prompt();
-        }
     }
     else if (imgIndex == 9) {
         finalMessage.innerText = 'Unfortunately You lost..';
