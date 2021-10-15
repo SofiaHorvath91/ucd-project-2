@@ -107,7 +107,7 @@ function isLetter(char) {
 }
 
 function checkLetter(letter) {
-    if (isLetter(letter)) {
+    if (isLetter(letter) && letter.length == 1) {
         if (selectedWord.includes(letter)) {
             if (!correctletters.includes(letter)) {
                 correctletters.push(letter);
