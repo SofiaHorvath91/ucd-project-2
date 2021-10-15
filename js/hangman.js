@@ -110,7 +110,9 @@ function checkLetter(letter){
                 correctletters.push(letter);
                 showWord();
             } else {
-                showNotification();
+                if(!isMobileDevice()){
+                    showNotification();
+                }
             }
         }
         else {
@@ -118,7 +120,9 @@ function checkLetter(letter){
                 wrongLetters.push(letter);
                 updateWrongLetters(letter);
             } else {
-                showNotification();
+                if(!isMobileDevice()){
+                    showNotification();
+                }
             }
         }
     }
@@ -132,7 +136,14 @@ function updateWrongLetters(letter) {
     imgIndex++;
     hangmanImg.src = "img/hangman/" + imgIndex.toString() + ".png";
     if (imgIndex < 9) {
-        wrongLettersP.innerHTML += letter.toString() + " ";
+        if(isMobileDevice()){
+            setTimeout(function(){ 
+                wrongLettersP.innerHTML += letter.toString() + " ";
+            }, 1500);
+        }
+        else{
+            wrongLettersP.innerHTML += letter.toString() + " ";
+        }
     }
     else if (imgIndex == 9) {
         finalMessage.innerText = 'Unfortunately You lost..';

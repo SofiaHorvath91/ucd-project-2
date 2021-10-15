@@ -114,7 +114,8 @@ nav {
 
 .nav-link:hover {
   color: black !important;
-  text-shadow: -1px 0 var(--golden), 0 1px var(--golden), 1px 0 var(--golden), 0 -1px var(--golden);
+  text-shadow: -1px 0 var(--golden), 0 1px var(--golden), 1px 0 var(--golden),
+    0 -1px var(--golden);
 }
 
 .logo-img {
@@ -274,10 +275,10 @@ nav {
   #quiz-starter-img {
     width: 300px;
   }
-  
-  .quiz-card{
+
+  .quiz-card {
     width: 280px;
-    padding:0 0.2rem 0 0.2rem;
+    padding: 0 0.2rem 0 0.2rem;
   }
 
   .modal-content {
@@ -305,5 +306,14 @@ nav {
 
   .dropdown-item {
     font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .letter,
+  .empty-space {
+    font-size: 20px;
+    margin: 0 2px;
+    width: 15px;
   }
 }
