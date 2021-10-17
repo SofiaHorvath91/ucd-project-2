@@ -41,6 +41,11 @@ main{
   margin: 0 !important;
 }
 
+button,
+a{
+  cursor: pointer !important;
+}
+
 p {
   font-size: 18px;
 }
@@ -187,7 +192,7 @@ nav {
   background-color: var(--darkgray);
   display: block;
   position: fixed;
-  padding: 1rem 0 1rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -211,7 +216,7 @@ nav {
 .resp-sharing-button {
   border-radius: 5px;
   transition: 25ms ease-out;
-  padding: 0.5em 0.75em;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial,sans-serif';
   border: 0.1em solid white;
 }
@@ -233,8 +238,8 @@ nav {
 }
 
 .resp-sharing-button__icon svg {
-  width: 1em;
-  height: 1em;
+  width: 0.9em;
+  height: 0.9em;
   margin-right: 0.4em;
   vertical-align: top;
 }
@@ -269,6 +274,29 @@ nav {
 }
 
 /* Resize */
+
+@media screen and (max-width: 991.5px) {
+  .logo-mobile {
+    display: flex;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .navbar-mobile {
+    width: 100%;
+    display: block;
+  }
+
+  .navbar li a {
+    font-size: 20px !important;
+  }
+
+  .dropdown-item {
+    font-size: 14px !important;
+  }
+}
 
 @media screen and (max-width: 800px) {
   #memorycards-container {
@@ -305,26 +333,9 @@ nav {
   }
 }
 
-@media screen and (max-width: 991.5px) {
-  .logo-mobile {
-    display: flex;
-  }
-
-  .logo-desktop {
-    display: none;
-  }
-
-  .navbar-mobile {
-    width: 100%;
-    display: block;
-  }
-
-  .navbar li a {
-    font-size: 20px !important;
-  }
-
-  .dropdown-item {
-    font-size: 14px !important;
+@media screen and (max-width: 500px) {
+  .sorting-result-img{
+    width: 90px;
   }
 }
 
@@ -356,9 +367,9 @@ nav {
   }
 
   #index-sorting-btn{
-    width: 270px;
-    font-size: 1.5rem;
-    letter-spacing: 0.15rem;
+    width: 250px;
+    font-size: 1.3rem;
+    letter-spacing: 0.12rem;
   }
 
   #quiz-playagain-btn,
