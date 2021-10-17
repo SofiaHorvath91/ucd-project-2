@@ -2,6 +2,12 @@
     width: 500px;
 }
 
+#quiz-container,
+#sorting-container{
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    padding-right: calc(var(--bs-gutter-x) * .5) !important;
+}
+
 .white-card {
     border: none;
     box-shadow: var(--card-shadow);
@@ -38,6 +44,9 @@
 input[type=checkbox] {
     vertical-align: middle;
     display:inline-block;
+}
+.quiz-btns{
+    padding-left: 0 !important;
 }
 
 .quiz-btns button{

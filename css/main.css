@@ -200,7 +200,7 @@ nav {
 }
 
 .footer p {
-  font-size: 12px !important;
+  font-size: 11px !important;
   color: white;
   text-align: center;
   margin: auto;
@@ -376,5 +376,9 @@ nav {
   #quiz-othergame-btn{
     font-size: 16px;
     width: 140px;
+  }
+
+  .footer p {
+    font-size: 10px !important;
   }
 }
