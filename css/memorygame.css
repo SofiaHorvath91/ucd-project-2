@@ -9,7 +9,6 @@
 }
 
 #memorygame-timer {
-    font-size: 30px;
     font-weight: bold;
 }
 
@@ -74,7 +73,6 @@
 }
 
 .game-results-item {
-    font-size: 22px;
     font-weight: bold;
     margin-top: 0.5rem;
 }

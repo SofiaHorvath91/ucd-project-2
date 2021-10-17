@@ -23,8 +23,8 @@
   text-align: center;
 }
 
-#wrong-letters {
-  font-size: 30px !important;
+#player-letters-label{
+  font-size: 2rem;
 }
 
 .popup-container {

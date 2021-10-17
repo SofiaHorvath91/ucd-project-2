@@ -109,8 +109,8 @@ $('#end-quiz-btn').click(function () {
     }
 
     quizQuestionsTotal.innerHTML = "TOTAL QUESTIONS : " + questions.length;
-    quizQuestionsCorrect.innerHTML = "CORRECT ANSWERS : " + correctAnswers;
-    quizQuestionsIncorrect.innerHTML = "INCORRECT ANSWERS : " + (questions.length - correctAnswers);
+    quizQuestionsCorrect.innerHTML = "CORRECT : " + correctAnswers;
+    quizQuestionsIncorrect.innerHTML = "INCORRECT : " + (questions.length - correctAnswers);
 });
 
 $('#quiz-playagain-btn').click(function () {
