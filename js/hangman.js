@@ -6,7 +6,8 @@ var wrongLettersP = document.getElementById("wrong-letters");
 var playerLetterMobile = document.getElementById("hangman-game-mobile");
 const popup = document.getElementById('hangman-popup-container');
 const finalMessage = document.getElementById('hangman-final-message');
-var hangmanResultImg = document.getElementById("hangman-result-img");
+const finalWord = document.getElementById('hangman-final-word');
+const hangmanResultImg = document.getElementById("hangman-result-img");
 
 const words = [
     'red wedding',
@@ -79,7 +80,7 @@ window.addEventListener('keydown', e => {
 
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
+}
 
 function showWord() {
     word.innerHTML =
@@ -96,14 +97,12 @@ function showWord() {
     const selectedFinal = selectedWord.toLowerCase().replace(/ /g, '');
 
     if (innerWord === selectedFinal) {
-        finalMessage.innerText = 'Congratulations! You Won!';
-        hangmanResultImg.src = "img/got-winner.png";
-        popup.style.display = 'flex';
+        showResult("winner");
     }
 }
 
 function isLetter(char) {
-    return (/[a-zA-Z]/).test(char)
+    return (/[a-zA-Z]/).test(char);
 }
 
 function checkLetter(letter) {
@@ -148,8 +147,18 @@ function updateWrongLetters(letter) {
         }
     }
     else if (imgIndex == 9) {
+        showResult("looser");
+    }
+}
+
+function showResult(result) {
+    popup.style.display = 'flex';
+    finalWord.innerText = selectedWord;
+    if (result == "winner") {
+        finalMessage.innerText = 'Congratulations! You Won!';
+        hangmanResultImg.src = "img/got-winner.png";
+    } else {
         finalMessage.innerText = 'Unfortunately You lost..';
         hangmanResultImg.src = "img/got-looser.png";
-        popup.style.display = 'flex';
     }
 }

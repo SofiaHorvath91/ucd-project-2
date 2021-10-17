@@ -13,7 +13,7 @@
     box-shadow: var(--card-shadow);
     border-radius: 0.5rem;
     margin: auto;
-    -ms-flex: 50%; /* IE10 */
+    -ms-flex: 50%;
     flex: 50%;
     max-width: 300px;
     padding: 0 4px;

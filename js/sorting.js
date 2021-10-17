@@ -2,7 +2,6 @@ var sortingContainer = document.getElementById("sorting-container");
 var sortingResultsContainer = document.getElementById("sorting-results-container");
 
 var sortingCheckboxes = document.getElementsByClassName("quiz-cb");
-var sortingAnswers = document.getElementsByClassName("answer-label");
 
 var sortingQuestion = document.getElementById("sorting-question");
 var sortingAnswer1 = document.getElementById("sorting-answer-label-1");
@@ -21,7 +20,6 @@ var modal = document.getElementById("circle-img-modal-sorting");
 var modalImg = document.getElementById("modal-img-sorting");
 var modalCaption = document.getElementById("modal-caption-sorting");
 var modalCaptionPercent = document.getElementById("caption-percentage-sorting");
-var closeModal = document.getElementById("close-modal-sorting");
 
 let questions = [];
 var questionIndex = 0;
@@ -99,7 +97,7 @@ $('.quiz-cb').change(function () {
 });
 
 $('#sorting-next-btn').click(function () {
-    var isChecked = $('input:checkbox').is(':checked')
+    var isChecked = $('input:checkbox').is(':checked');
     if (!isChecked) {
         alert("Please select an answer!");
         return;
@@ -207,9 +205,9 @@ function getFinalHouses() {
         }
     }
 
-    for (var i = 0; i < countPlayerHouses.length; i++) {
-        if (countPlayerHouses[i].count == maxCount) {
-            playerFinalHouses.push(countPlayerHouses[i].house);
+    for (var j = 0; j < countPlayerHouses.length; j++) {
+        if (countPlayerHouses[j].count == maxCount) {
+            playerFinalHouses.push(countPlayerHouses[j].house);
         }
     }
 }
@@ -237,7 +235,13 @@ function showFinalHouses() {
 
         let houseCount = countPlayerHouses.find(h => h.house === playerFinalHouses[i]);
         var percent = parseFloat(((parseInt(houseCount.count) / questions.length) * 100)).toFixed(2);
-        sortingResultPercent.innerHTML += percent + "% (" + houseCount.count + " / " + questions.length + ")";
+
+        if (i == 0) {
+            sortingResultPercent.innerHTML = percent + "% (" + houseCount.count + " / " + questions.length + ")";
+        }
+        else {
+            sortingResultPercent.innerHTML += percent + "% (" + houseCount.count + " / " + questions.length + ")";
+        }
         if (i < playerFinalHouses.length - 1) {
             sortingResultPercent.innerHTML += " & ";
         }
@@ -264,6 +268,6 @@ function createCircle(listItems) {
     for (var i = 0; i < listItems.length; i++) {
         var offsetAngle = 360 / listItems.length;
         var rotateAngle = offsetAngle * i;
-        $(listItems[i]).css("transform", "rotate(" + rotateAngle + "deg) translate(0, -120px) rotate(-" + rotateAngle + "deg)")
-    };
+        $(listItems[i]).css("transform", "rotate(" + rotateAngle + "deg) translate(0, -120px) rotate(-" + rotateAngle + "deg)");
+    }
 }

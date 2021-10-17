@@ -52,11 +52,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="quiz.html">QUIZES</a>
                         </li>
-                        <div class="navbar-logo logo-desktop">
+                        <li class="navbar-logo logo-desktop">
                             <a href="index.html">
                                 <img class="logo-img" src="img/logo.png" title="Home" alt="Site Logo">
                             </a>
-                        </div>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="gamesDropdownMenu" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,23 +77,23 @@
     <main>
         <div class="row container-row mt-4 mb-3" id="hangman-starter-div">
             <div class="center-container">
-                <article>
+                <section>
                     <header>
-                        <img src="img/hangman/vmvd.png" id="hangman-starter-img">
+                        <img src="img/hangman/vmvd.png" id="hangman-starter-img" alt="Valar Morghulis - Valar Dohaeris">
                         <h2 class="mt-4">Play the Game of Words & try to trick the Many-Faced God!</h2>
                     </header>
-                    <section class="mt-4 mb-2">
+                    <div class="mt-4 mb-2">
                         <button id="hangman-start-btn" class="btn btn-warning btn-lg mb-2">
                             <strong>Play the Game</strong>
                         </button>
-                    </section>
-                </article>
+                    </div>
+                </section>
             </div>
         </div>
         <div class="row container-row hidden" id="hangman-game-container">
             <div class="row container-row mt-4 mb-4">
                 <div class="center-container">
-                    <img id="hangman-img" src="img/hangman/0.png">
+                    <img id="hangman-img" src="img/hangman/0.png" alt="Hangman Status">
                 </div>
             </div>
             <div class="row container-row mt-4 mb-4">
@@ -115,18 +115,29 @@
         </div>
         <div class="popup-container" id="hangman-popup-container">
             <div class="popup">
-                <h2 id="hangman-final-message"></h2>
-                <div class="row container-row mt-4 mb-3">
-                    <div class="center-container">
-                        <img class="result-img" id="hangman-result-img" src="img/got-winner.png">
-                    </div>
-                </div>
-                <button id="hangman-newgame-btn" class="btn btn-warning btn-lg mb-2">
-                    <strong>New Game</strong>
-                </button>
-                <button id="hangman-exit-btn" class="btn btn-warning btn-lg mb-2">
-                    <strong>Exit Game</strong>
-                </button>
+                <article>
+                    <header>
+                        <h2 id="hangman-final-message">Your Result</h2>
+                    </header>
+                    <section>
+                        <h4>Your Word :</h4>
+                        <h4 id="hangman-final-word">Actual Word</h4>
+                        <div class="row container-row mt-3 mb-3">
+                            <div class="center-container">
+                                <img class="result-img" id="hangman-result-img" src="img/got-winner.png"
+                                    alt="Winner or Looser?">
+                            </div>
+                        </div>
+                    </section>
+                    <footer>
+                        <button id="hangman-newgame-btn" class="btn btn-warning btn-lg mb-2">
+                            <strong>New Game</strong>
+                        </button>
+                        <button id="hangman-exit-btn" class="btn btn-warning btn-lg mb-2">
+                            <strong>Exit Game</strong>
+                        </button>
+                    </footer>
+                </article>
             </div>
         </div>
     </main>
@@ -205,7 +216,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/hangman.js"></script>
+    <script src="js/hangman.js"></script>
 
 </body>
 

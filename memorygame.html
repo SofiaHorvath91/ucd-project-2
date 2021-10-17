@@ -52,11 +52,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="quiz.html">QUIZES</a>
                         </li>
-                        <div class="navbar-logo logo-desktop">
+                        <li class="navbar-logo logo-desktop">
                             <a href="index.html">
                                 <img class="logo-img" src="img/logo.png" title="Home" alt="Site Logo">
                             </a>
-                        </div>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="gamesDropdownMenu" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,28 +77,28 @@
     <main>
         <div class="row container-row mt-2" id="memorygame-starter-div">
             <div class="center-container">
-                <article>
+                <section>
                     <header>
-                        <img src="img/memorygame/crest.png" id="memorygame-starter-img">
+                        <img src="img/memorygame/crest.png" id="memorygame-starter-img" alt="Memory Game Crest">
                         <h2 class="mt-4">One with the fastest eye and best memory will have the longest life!</h2>
                     </header>
-                    <section class="mt-3 mb-5">
+                    <div class="mt-3 mb-5">
                         <div class="row container-row mb-2" id="memorygame-levels-div">
                             <label for="memorygame-levels"><strong>LEVEL</strong></label>
                             <div class="center-container">
                                 <select id="memorygame-levels" name="memorygame-levels">
                                     <option value="0" selected>--Choose a level--</option>
-                                    <option value="3">Easy (3 mins)</option>
-                                    <option value="2">Medium (2 mins)</option>
-                                    <option value="1">Hard (1 mins)</option>
+                                    <option value="3 min - Easy Level">Easy (3 mins)</option>
+                                    <option value="2 min - Medium Level">Medium (2 mins)</option>
+                                    <option value="1 min - Hard Level">Hard (1 min)</option>
                                 </select>
                             </div>
                         </div>
                         <button id="memorygame-start-btn" class="btn btn-warning btn-lg mt-4">
                             <strong>Test Yourself</strong>
                         </button>
-                    </section>
-                </article>
+                    </div>
+                </section>
             </div>
         </div>
         <div class="row container-row hidden mb-5" id="memorygame-container">
@@ -120,77 +120,94 @@
         </div>
         <div class="popup-container" id="memorygame-popup-container">
             <div class="popup">
-                <h2 id="memorygame-final-message"></h2>
-                <div class="row container-row mt-4 mb-3">
-                    <div class="center-container">
-                        <img class="result-img" id="memorygame-result-img" src="img/got-winner.png">
+                <section>
+                    <header>
+                        <h2 id="memorygame-final-message">Your Result</h2>
+                    </header>
+                    <div class="row container-row mt-4 mb-3">
+                        <div class="center-container">
+                            <img class="result-img" id="memorygame-result-img" src="img/got-winner.png"
+                                alt="Winner or Looser?">
+                        </div>
                     </div>
-                </div>
-                <button id="memorygame-result-btn" class="btn btn-warning btn-lg mb-2">
-                    <strong>See Result</strong>
-                </button>
+                    <button id="memorygame-result-btn" class="btn btn-warning btn-lg mb-2">
+                        <strong>See Result</strong>
+                    </button>
+                </section>
             </div>
         </div>
         <div class="row container-row hidden mb-5" id="memorygame-results-container">
-            <div class="row container-row mt-3">
-                <div class="center-container">
-                    <img id="memorygame-finalresult-img" class="final-result-img" src="img/got-winner.png">
-                </div>
-            </div>
-            <h1 id="memorygame-player-result" class="center-text gold-text-border mt-2 mb-3"></h1>
-            <div class="center-container mb-4">
-                <div class="row container-row memorygame-results-details">
-                    <p id="memorygame-player-tries" class="center-text game-results-item golden-label">ROUNDS : </p>
-                    <p id="memorygame-player-time" class="center-text game-results-item golden-label">TIME : </p>
-                    <p id="memorygame-player-pairs" class="center-text game-results-item golden-label">PAIRS : </p>
-                </div>
-            </div>
-            <div class="row container-row">
-                <div class="center-container mt-2 mb-2">
-                    <button id="memorygame-newgame-btn" class="btn btn-warning btn-lg">
-                        <strong>New Game</strong>
-                    </button>
-                </div>
-            </div>
-            <h2 class="center-text mt-2 fw-bold">
-                Before going on, have a quick glance at the great houses!
-            </h2>
-            <div class="row container-row mt-2 mb-5">
-                <div class="center-container">
-                    <ul class="circle-container">
-                        <li class="circle-list-item" id="house-targaryen">
-                            <img src="img/memorygame/house-targaryen.png">
-                        </li>
-                        <li class="circle-list-item" id="house-lannister">
-                            <img src="img/memorygame/house-lannister.png">
-                        </li>
-                        <li class="circle-list-item" id="house-tyrell">
-                            <img src="img/memorygame/house-tyrell.png">
-                        </li>
-                        <li class="circle-list-item" id="house-greyjoy">
-                            <img src="img/memorygame/house-greyjoy.png">
-                        </li>
-                        <li class="circle-list-item" id="house-martell">
-                            <img src="img/memorygame/house-martell.png">
-                        </li>
-                        <li class="circle-list-item" id="house-arryn">
-                            <img src="img/memorygame/house-arryn.png">
-                        </li>
-                        <li class="circle-list-item" id="house-tully">
-                            <img src="img/memorygame/house-tully.png">
-                        </li>
-                        <li class="circle-list-item" id="house-baratheon">
-                            <img src="img/memorygame/house-baratheon.png">
-                        </li>
-                        <li class="circle-list-item" id="house-stark">
-                            <img src="img/memorygame/house-stark.png">
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <article>
+                <header>
+                    <div class="row container-row mt-3">
+                        <div class="center-container">
+                            <img id="memorygame-finalresult-img" class="final-result-img" src="img/got-winner.png"
+                                alt="Winner or Looser?">
+                        </div>
+                    </div>
+                    <h2 id="memorygame-player-result" class="center-text gold-text-border mt-2 mb-3">Your Result</h2>
+                    <div class="center-container mb-4">
+                        <div class="row container-row memorygame-results-details">
+                            <p id="memorygame-player-level" class="center-text game-results-item golden-label">LEVEL :
+                            </p>
+                            <p id="memorygame-player-tries" class="center-text game-results-item golden-label">ROUNDS :
+                            </p>
+                            <p id="memorygame-player-time" class="center-text game-results-item golden-label">TIME :
+                            </p>
+                            <p id="memorygame-player-pairs" class="center-text game-results-item golden-label">PAIRS :
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row container-row">
+                        <div class="center-container mt-2 mb-2">
+                            <button id="memorygame-newgame-btn" class="btn btn-warning btn-lg">
+                                <strong>New Game</strong>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                <section>
+                    <h2 class="center-text mt-2 fw-bold">
+                        Before going on, have a quick glance at the great houses!
+                    </h2>
+                    <div class="row container-row mt-2 mb-4">
+                        <div class="center-container">
+                            <ul class="circle-container">
+                                <li class="circle-list-item" id="house-targaryen">
+                                    <img src="img/memorygame/house-targaryen.png" alt="House Targaryen">
+                                </li>
+                                <li class="circle-list-item" id="house-lannister">
+                                    <img src="img/memorygame/house-lannister.png" alt="House Lannister">
+                                </li>
+                                <li class="circle-list-item" id="house-tyrell">
+                                    <img src="img/memorygame/house-tyrell.png" alt="House Tyrell">
+                                </li>
+                                <li class="circle-list-item" id="house-greyjoy">
+                                    <img src="img/memorygame/house-greyjoy.png" alt="House Greyjoy">
+                                </li>
+                                <li class="circle-list-item" id="house-martell">
+                                    <img src="img/memorygame/house-martell.png" alt="House Martell">
+                                </li>
+                                <li class="circle-list-item" id="house-arryn">
+                                    <img src="img/memorygame/house-arryn.png" alt="House Arryn">
+                                </li>
+                                <li class="circle-list-item" id="house-tully">
+                                    <img src="img/memorygame/house-tully.png" alt="House Tully">
+                                </li>
+                                <li class="circle-list-item" id="house-baratheon">
+                                    <img src="img/memorygame/house-baratheon.png" alt="House Baratheon">
+                                </li>
+                                <li class="circle-list-item" id="house-stark">
+                                    <img src="img/memorygame/house-stark.png" alt="House Stark">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
             <div id="circle-img-modal-memorygame" class="modal">
                 <span id="close-modal-memorygame" class="close-modal">&times;</span>
-                <img class="modal-content" id="modal-img-memorygame">
+                <img class="modal-content" id="modal-img-memorygame" src="img/memorygame/crest.png" alt="House Crest">
                 <div id="modal-caption-memorygame" class="modal-caption"></div>
             </div>
         </div>
@@ -270,7 +287,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/memorygame.js"></script>
+    <script src="js/memorygame.js"></script>
 
 </body>
 

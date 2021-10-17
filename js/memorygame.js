@@ -3,7 +3,6 @@ var memorygameLevel = document.getElementById("memorygame-levels");
 
 var memorygameContainer = document.getElementById("memorygame-container");
 var memorygameTimer = document.getElementById("memorygame-timer");
-var memorycardsContainer = document.getElementById("memorycards-container");
 
 const popup = document.getElementById('memorygame-popup-container');
 const finalMessage = document.getElementById('memorygame-final-message');
@@ -11,6 +10,7 @@ var memorygameResultImg = document.getElementById("memorygame-result-img");
 var memorygameResultsContainer = document.getElementById("memorygame-results-container");
 
 var memorygameFinalResultImg = document.getElementById("memorygame-finalresult-img");
+var memorygamePlayerLevel = document.getElementById("memorygame-player-level");
 var memorygamePlayerResult = document.getElementById("memorygame-player-result");
 var memorygamePlayerTries = document.getElementById("memorygame-player-tries");
 var memorygamePlayerTime = document.getElementById("memorygame-player-time");
@@ -20,7 +20,6 @@ var circleItems = document.getElementsByClassName("circle-list-item");
 var modal = document.getElementById("circle-img-modal-memorygame");
 var modalImg = document.getElementById("modal-img-memorygame");
 var modalCaption = document.getElementById("modal-caption-memorygame");
-var closeModal = document.getElementById("close-modal-memorygame");
 
 const cards = [
     'house-tully',
@@ -50,6 +49,7 @@ const cardsRandom = cards
 
 const activeCards = [];
 
+var level;
 var countdown;
 var timer;
 var playerTries = 0;
@@ -62,11 +62,13 @@ $(function () {
 });
 
 $('#memorygame-start-btn').click(function () {
-    if (parseInt(memorygameLevel.value) > 0) {
+    level = memorygameLevel.value;
+    var levelNum = memorygameLevel.value.split(" ")[0];
+    if (parseInt(levelNum) > 0) {
         memorygameStarterDiv.classList.add("hidden");
         memorygameContainer.classList.remove("hidden");
 
-        setCountDown(memorygameLevel.value);
+        setCountDown(levelNum);
         createCards();
     } else {
         alert("Please select a game level!");
@@ -82,7 +84,7 @@ $('body').on('click', '.cards-img', function () {
     }
     else {
         var id = $(this).attr('id');
-        this.src = "img/memorygame/" + getCardName(id) + ".png"
+        this.src = "img/memorygame/" + getCardName(id) + ".png";
         this.classList.add("cards-show");
         this.classList.add("selected-cards");
         activeCards.push(this);
@@ -113,7 +115,7 @@ $('.circle-list-item').click(function () {
         .then(data => {
             var houses = data.split("***");
             for (var i = 0; i < houses.length; i++) {
-                var houseName = houses[i].trim().split('\n')[0].split(' ')[1].trim()
+                var houseName = houses[i].trim().split('\n')[0].split(' ')[1].trim();
                 if (id.split("-")[1].toUpperCase() == houseName) {
                     modalCaption.innerHTML = houses[i];
                 }
@@ -238,6 +240,7 @@ function showFinalResults() {
         memorygamePlayerResult.innerHTML = "Unfortunately You lost..";
         memorygameFinalResultImg.src = "img/got-looser.png";
     }
+    memorygamePlayerLevel.innerHTML += level;
     memorygamePlayerTries.innerHTML += playerTries + " FLIPS";
     memorygamePlayerTime.innerHTML += playTime;
     memorygamePlayerPairs.innerHTML += foundPairs + " / " + (cards.length / 2);
@@ -247,6 +250,6 @@ function createCircle(listItems) {
     for (var i = 0; i < listItems.length; i++) {
         var offsetAngle = 360 / listItems.length;
         var rotateAngle = offsetAngle * i;
-        $(listItems[i]).css("transform", "rotate(" + rotateAngle + "deg) translate(0, -120px) rotate(-" + rotateAngle + "deg)")
-    };
+        $(listItems[i]).css("transform", "rotate(" + rotateAngle + "deg) translate(0, -120px) rotate(-" + rotateAngle + "deg)");
+    }
 }

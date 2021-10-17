@@ -50,7 +50,7 @@ $('.quiz-cb').change(function () {
 });
 
 $('#check-answer-btn').click(function () {
-    var isChecked = $('input:checkbox').is(':checked')
+    var isChecked = $('input:checkbox').is(':checked');
     if (!isChecked) {
         alert("Please select an answer!");
         return;

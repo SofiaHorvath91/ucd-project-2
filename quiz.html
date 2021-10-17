@@ -52,11 +52,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="quiz.html">QUIZES</a>
                         </li>
-                        <div class="navbar-logo logo-desktop">
+                        <li class="navbar-logo logo-desktop">
                             <a href="index.html">
                                 <img class="logo-img" src="img/logo.png" title="Home" alt="Site Logo">
                             </a>
-                        </div>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="gamesDropdownMenu" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,7 +77,7 @@
     <main>
         <div class="row container-row mt-4 mb-4" id="quiz-starter-div">
             <div class="center-container">
-                <img src="img/quiz/got-three-eyed-raven.png" id="quiz-starter-img">
+                <img src="img/quiz/got-three-eyed-raven.png" id="quiz-starter-img" alt="Three-Eyed Raven">
             </div>
             <h2 class="center-text mt-3 mb-3 fw-bold">
                 Test your knowledge about the wonderful World of Ice & Fire!
@@ -88,7 +88,7 @@
                         <article>
                             <header>
                                 <h3 class="mt-3 mb-3 gold-text-border">BOOKS VERSUS SHOW</h3>
-                                <img src="img/quiz/got-icon.png" class="got-icon">
+                                <img src="img/quiz/got-icon.png" class="got-icon" alt="Game of Thrones Icon">
                             </header>
                             <section class="mt-3 mb-2">
                                 <header>
@@ -112,7 +112,7 @@
                         <article>
                             <header>
                                 <h3 class="mt-3 mb-3 gold-text-border">GOT THE GoT?</h3>
-                                <img src="img/quiz/got-icon.png" class="got-icon">
+                                <img src="img/quiz/got-icon.png" class="got-icon" alt="Game of Thrones Icon">
                             </header>
                             <section class="mt-3 mb-2">
                                 <header>
@@ -132,7 +132,7 @@
         </div>
         <div class="row container-row hidden mt-4 mb-5" id="quiz-container">
             <div class="white-card">
-                <h4 id="quiz-question" class="mt-2 quiz-question"></h4>
+                <h4 id="quiz-question" class="mt-2 quiz-question">Question</h4>
                 <div class="mb-1">
                     <input class="quiz-cb answer-1" type="checkbox" id="answer-1" />
                     <label for="answer-1" id="answer-label-1" class="answer-label"></label>
@@ -163,30 +163,39 @@
             </div>
         </div>
         <div class="row container-row hidden mb-3" id="quiz-results-container">
-            <div class="row container-row mt-3">
-                <div class="center-container">
-                    <img id="quiz-finalresult-img" class="final-result-img" src="img/got-winner.png">
-                </div>
-            </div>
-            <h1 id="quiz-player-result" class="center-text gold-text-border mt-3 mb-2"></h1>
-            <h2 id="quiz-result-comment" class="center-text mt-1 mb-3 fw-bold"></h2>
-            <div class="center-container mb-4">
-                <div class="row container-row quiz-results-details">
-                    <p id="quiz-questions-total" class="center-text game-results-item golden-label"></p>
-                    <p id="quiz-questions-correct" class="center-text game-results-item golden-label"></p>
-                    <p id="quiz-questions-incorrect" class="center-text game-results-item golden-label"></p>
-                </div>
-            </div>
-            <div class="row container-row">
-                <div class="center-container mt-2 mb-4">
-                    <button id="quiz-playagain-btn" class="btn btn-warning btn-lg me-1">
-                        <strong>Play Again</strong>
-                    </button>
-                    <button id="quiz-othergame-btn" class="btn btn-warning btn-lg ms-1">
-                        <strong>All Quizes</strong>
-                    </button>
-                </div>
-            </div>
+            <article>
+                <header>
+                    <div class="row container-row mt-3">
+                        <div class="center-container">
+                            <img id="quiz-finalresult-img" class="final-result-img" src="img/got-winner.png"
+                                alt="Winner or Looser?">
+                        </div>
+                    </div>
+                    <h2 id="quiz-player-result" class="center-text gold-text-border mt-3 mb-2">Your Result</h2>
+                </header>
+                <section>
+                    <h2 id="quiz-result-comment" class="center-text mt-1 mb-3 fw-bold">About Your Result</h2>
+                    <div class="center-container mb-4">
+                        <div class="row container-row quiz-results-details">
+                            <p id="quiz-questions-total" class="center-text game-results-item golden-label"></p>
+                            <p id="quiz-questions-correct" class="center-text game-results-item golden-label"></p>
+                            <p id="quiz-questions-incorrect" class="center-text game-results-item golden-label"></p>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <div class="row container-row">
+                        <div class="center-container mt-2 mb-4">
+                            <button id="quiz-playagain-btn" class="btn btn-warning btn-lg me-1">
+                                <strong>Play Again</strong>
+                            </button>
+                            <button id="quiz-othergame-btn" class="btn btn-warning btn-lg ms-1">
+                                <strong>All Quizes</strong>
+                            </button>
+                        </div>
+                    </div>
+                </footer>
+            </article>
         </div>
     </main>
 
@@ -264,7 +273,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/quiz.js"></script>
+    <script src="js/quiz.js"></script>
 
 </body>
 
