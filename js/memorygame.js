@@ -1,3 +1,5 @@
+/* DOM elements */
+
 var memorygameStarterDiv = document.getElementById("memorygame-starter-div");
 var memorygameLevel = document.getElementById("memorygame-levels");
 
@@ -20,6 +22,8 @@ var circleItems = document.getElementsByClassName("circle-list-item");
 var modal = document.getElementById("circle-img-modal-memorygame");
 var modalImg = document.getElementById("modal-img-memorygame");
 var modalCaption = document.getElementById("modal-caption-memorygame");
+
+/* Variables */
 
 const cards = [
     'house-tully',
@@ -57,10 +61,14 @@ var playTime;
 var foundPairs = 0;
 var winner;
 
+/* jQuery */
+
+/* On Page load : Arrange house crest images in circle (in section Memory Game - Game Result - Great Houses Presentation) */
 $(function () {
     createCircle(circleItems);
 });
 
+/* Handling click on Start Game button (Show Player layout + Start game) */
 $('#memorygame-start-btn').click(function () {
     level = memorygameLevel.value;
     var levelNum = memorygameLevel.value.split(" ")[0];
@@ -75,6 +83,7 @@ $('#memorygame-start-btn').click(function () {
     }
 });
 
+/* Handling click on cards to flip during game */
 $('body').on('click', '.cards-img', function () {
     if (activeCards.length == 2) {
         alert("No more than 2 cards at the same time!");
@@ -89,10 +98,11 @@ $('body').on('click', '.cards-img', function () {
         this.classList.add("selected-cards");
         activeCards.push(this);
 
-        timer = setTimeout(handleCard, 1500);
+        timer = setTimeout(handleCard, 1300);
     }
 });
 
+/* Handling click on See Results button at the end of game (in popup window) */
 $('#memorygame-result-btn').click(function () {
     memorygameContainer.classList.add("hidden");
     memorygameResultsContainer.classList.remove("hidden");
@@ -101,10 +111,13 @@ $('#memorygame-result-btn').click(function () {
     popup.style.display = 'none';
 });
 
+/* Handling click on New Game button (in popup window) */
 $('#memorygame-newgame-btn').click(function () {
     location.reload();
 });
 
+/* Handle click on house crest images arranged in circle to open modal with house description + read in house description from txt
+=> Source / Inspiration : https://www.w3schools.com/howto/howto_css_modal_images.asp */
 $('.circle-list-item').click(function () {
     var id = this.id;
     modal.style.display = "block";
@@ -123,14 +136,15 @@ $('.circle-list-item').click(function () {
         });
 });
 
+/* Handle click on close icon to close house crest modal opened by clicking on house crest image from circle */
 $('#close-modal-memorygame').click(function () {
     modal.style.display = "none";
 });
 
-$('#memorygame-newgame-btn').click(function () {
-    location.reload();
-});
+/* Functions */
 
+/* Set game time countdown based on provided game level by user (1 or 2 or 3 mins)
+=> Source/inspiration : https://www.w3schools.com/howto/howto_js_countdown.asp */
 function setCountDown(level) {
     var deadline = new Date();
     deadline.setMinutes(deadline.getMinutes() + parseInt(level));
@@ -158,6 +172,7 @@ function setCountDown(level) {
     }, 1000);
 }
 
+/* Create memory cards when starting game */
 function createCards() {
     var columns = document.getElementsByClassName("cards-column");
 
@@ -188,6 +203,8 @@ function createCards() {
     }
 }
 
+/* Evaluating flipped cards (Turning them back or leaving them visible 
++ handling game end if user finds all pairs before countdown ends) */
 function handleCard() {
     playerTries++;
     if (activeCards.length == 2) {
@@ -210,6 +227,7 @@ function handleCard() {
     activeCards.splice(0);
 }
 
+/* Turn back cards if no match */
 function turnBackCards(activeCards) {
     for (var i = 0; i < activeCards.length; i++) {
         activeCards[i].classList.remove("cards-show");
@@ -218,10 +236,12 @@ function turnBackCards(activeCards) {
     }
 }
 
+/* Automation for getting card value (house name) based on card DOM's id */
 function getCardName(name) {
     return name.toString().split("_")[0];
 }
 
+/* Show user result in popup window */
 function popupFinalResults(text) {
     if (winner) {
         memorygameResultImg.src = "img/got-winner.png";
@@ -232,6 +252,7 @@ function popupFinalResults(text) {
     popup.style.display = 'flex';
 }
 
+/* Show detailed results after exiting game end popup window */
 function showFinalResults() {
     if (winner) {
         memorygamePlayerResult.innerHTML = "Congratulations! You Won!";
@@ -246,6 +267,8 @@ function showFinalResults() {
     memorygamePlayerPairs.innerHTML += foundPairs + " / " + (cards.length / 2);
 }
 
+/* Arrange house crest images in circle (in section Memory Game - Game Result - Great Houses Presentation)
+=> Source/Inspiration : https://jsfiddle.net/skwidbreth/q59s90oy/ */
 function createCircle(listItems) {
     for (var i = 0; i < listItems.length; i++) {
         var offsetAngle = 360 / listItems.length;

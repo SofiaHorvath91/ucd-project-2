@@ -1,3 +1,5 @@
+/* DOM elements */
+
 var quizStarterDiv = document.getElementById("quiz-starter-div");
 var quizContainer = document.getElementById("quiz-container");
 var quizResultsContainer = document.getElementById("quiz-results-container");
@@ -21,12 +23,17 @@ var quizQuestionsTotal = document.getElementById("quiz-questions-total");
 var quizQuestionsCorrect = document.getElementById("quiz-questions-correct");
 var quizQuestionsIncorrect = document.getElementById("quiz-questions-incorrect");
 
+/* Variables */
+
 let quizName;
 let questions = [];
 var questionIndex = 0;
 var selectedAnswer;
 var correctAnswers = 0;
 
+/* jQuery */
+
+/* Handle click on answer label (checking corresponding checkbox + store selected answer) */
 $('.answer-label').click(function () {
     var id = $(this).attr('id');
     var cbId = "answer-" + id.split("-")[2];
@@ -39,6 +46,7 @@ $('.answer-label').click(function () {
     selectedAnswer = id.split("-")[2];
 });
 
+/* Handle click on answer checkbox (check it and uncheck all others + store selected answer) */
 $('.quiz-cb').change(function () {
     var id = $(this).attr('id');
     for (var i = 0; i < quizCheckboxes.length; i++) {
@@ -49,6 +57,8 @@ $('.quiz-cb').change(function () {
     selectedAnswer = this.id.split("-")[1];
 });
 
+/* Handle click on Check Answer button 
+(disable answer selection, color right answer & wrong answer if selected, show Next Question button) */
 $('#check-answer-btn').click(function () {
     var isChecked = $('input:checkbox').is(':checked');
     if (!isChecked) {
@@ -81,6 +91,8 @@ $('#check-answer-btn').click(function () {
     }
 });
 
+/* Handle click on Next Question button 
+(store selection, enable answer selection, recolor answer labels, show next question, show Check Answer button) */
 $('#next-question-btn').click(function () {
     questionIndex++;
 
@@ -91,6 +103,7 @@ $('#next-question-btn').click(function () {
     setQuestionAnswers();
 });
 
+/* Handling click on End Quiz button + calculate/show user results */
 $('#end-quiz-btn').click(function () {
     quizContainer.classList.add("hidden");
     quizResultsContainer.classList.remove("hidden");
@@ -113,6 +126,7 @@ $('#end-quiz-btn').click(function () {
     quizQuestionsIncorrect.innerHTML = "INCORRECT : " + (questions.length - correctAnswers);
 });
 
+/* Handling click on Play Again button */
 $('#quiz-playagain-btn').click(function () {
     quizContainer.classList.remove("hidden");
     quizResultsContainer.classList.add("hidden");
@@ -129,10 +143,14 @@ $('#quiz-playagain-btn').click(function () {
     updateQuestions();
 });
 
+/* Handling click on Quizes button to go back to all quizes */
 $('#quiz-othergame-btn').click(function () {
     location.reload();
 });
 
+/* Functions */
+
+/* Handling quiz start (Show Player Layout + Read in questions from txt + Set first question) */
 function startQuiz(name) {
     quizName = name;
 
@@ -159,6 +177,7 @@ function startQuiz(name) {
         });
 }
 
+/* Load current quiz question in DOM elements */
 function setQuestionAnswers() {
     quizQuestion.innerHTML = questions[questionIndex].question;
     quizAnswer1.innerHTML = questions[questionIndex].answer1;
@@ -167,6 +186,7 @@ function setQuestionAnswers() {
     quizAnswer4.innerHTML = questions[questionIndex].answer4;
 }
 
+/* Recolor + clear/enable answer labels/checkboxes for new question */
 function updateQuestions() {
     $('.answer-label').on('click');
     for (var i = 0; i < quizCheckboxes.length; i++) {

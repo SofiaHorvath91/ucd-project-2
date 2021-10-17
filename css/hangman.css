@@ -1,6 +1,12 @@
+/* Hangman Game => Source/inspiration : https://www.udemy.com/course/web-projects-with-vanilla-javascript/ */
+
+/* Hangman Game - Starter Layout */
+
 #hangman-starter-img {
   width: 250px;
 }
+
+/* Hangman Game - Player Layout */
 
 .letter,
 .empty-space {
@@ -26,6 +32,8 @@
 #player-letters-label{
   font-size: 2rem;
 }
+
+/* Hangman Game - Result Layout (Popup window) */
 
 .popup-container {
   background-color: rgba(0, 0, 0, 0.3);

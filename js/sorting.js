@@ -1,3 +1,5 @@
+/* DOM elements */
+
 var sortingContainer = document.getElementById("sorting-container");
 var sortingResultsContainer = document.getElementById("sorting-results-container");
 
@@ -21,6 +23,8 @@ var modalImg = document.getElementById("modal-img-sorting");
 var modalCaption = document.getElementById("modal-caption-sorting");
 var modalCaptionPercent = document.getElementById("caption-percentage-sorting");
 
+/* Variables */
+
 let questions = [];
 var questionIndex = 0;
 var selectedAnswer;
@@ -43,8 +47,12 @@ const houseNames = [
     'martell'
 ];
 
-$(function () {
+/* jQuery */
 
+/* On Page load : 
+- Arrange house crest images in circle (in section Memory Game - Game Result - Great Houses Presentation)
+- Read in questions from txt + Set first question */
+$(function () {
     createCircle(circleItems);
 
     fetch('txt/houses-sorting.txt')
@@ -74,6 +82,7 @@ $(function () {
         });
 });
 
+/* Handle click on answer label (checking corresponding checkbox + store selected answer) */
 $('.answer-label').click(function () {
     var id = $(this).attr('id');
     var cbId = "answer-" + id.split("-")[3];
@@ -86,6 +95,7 @@ $('.answer-label').click(function () {
     selectedAnswer = id.split("-")[3];
 });
 
+/* Handle click on answer checkbox (check it and uncheck all others + store selected answer) */
 $('.quiz-cb').change(function () {
     var id = $(this).attr('id');
     for (var i = 0; i < sortingCheckboxes.length; i++) {
@@ -96,6 +106,8 @@ $('.quiz-cb').change(function () {
     selectedAnswer = this.id.split("-")[2];
 });
 
+/* Handle click on Next Question button 
+(store selection, deselect answer checkboxes, show next question & show End Answer button if needed) */
 $('#sorting-next-btn').click(function () {
     var isChecked = $('input:checkbox').is(':checked');
     if (!isChecked) {
@@ -125,6 +137,8 @@ $('#sorting-next-btn').click(function () {
     }
 });
 
+/* Handling click on End Quiz button + calculate user result to get user's final house(s)
++ read in user house(s) description from txt + show user result */
 $('#sorting-end-btn').click(function () {
     sortingContainer.classList.add("hidden");
     sortingResultsContainer.classList.remove("hidden");
@@ -143,10 +157,10 @@ $('#sorting-end-btn').click(function () {
             }
             showFinalHouses();
         });
-
-
 });
 
+/* Handle click on house crest images arranged in circle to open modal with house description and user result + read in house description from txt
+=> Source / Inspiration : https://www.w3schools.com/howto/howto_css_modal_images.asp */
 $('.circle-list-item').click(function () {
     var id = this.id.split('_')[0];
     modal.style.display = "block";
@@ -168,14 +182,19 @@ $('.circle-list-item').click(function () {
         });
 });
 
+/* Handle click on close icon to close house crest modal opened by clicking on house crest image from circle */
 $('#close-modal-sorting').click(function () {
     modal.style.display = "none";
 });
 
+/* Handling click on Play Again button */
 $('#sorting-playagain-btn').click(function () {
     location.reload();
 });
 
+/* Functions */
+
+/* Load current quiz question in DOM elements */
 function setQuestionAnswers() {
     sortingQuestion.innerHTML = questions[questionIndex].question;
     sortingAnswer1.innerHTML = questions[questionIndex].answer1.answer;
@@ -183,12 +202,14 @@ function setQuestionAnswers() {
     sortingAnswer3.innerHTML = questions[questionIndex].answer3.answer;
 }
 
+/* Clear answer checkboxes for new question */
 function updateQuestions() {
     for (var i = 0; i < sortingCheckboxes.length; i++) {
         sortingCheckboxes[i].checked = false;
     }
 }
 
+/* Store houses associated to selected answer when clicking on Next Question */
 function addHouses(houses) {
     var housesArray = houses.split(",");
     for (var i = 0; i < housesArray.length; i++) {
@@ -196,6 +217,7 @@ function addHouses(houses) {
     }
 }
 
+/* Calculate user result to get/store user's final house(s) based on user selection / house key-value pairs  */
 function getFinalHouses() {
     houseNames.forEach(countHouseInResults);
     var maxCount = 0;
@@ -212,6 +234,7 @@ function getFinalHouses() {
     }
 }
 
+/* Calculate user selection / house and store as key-value pairs */
 function countHouseInResults(house) {
     var houseCount = {
         "house": house,
@@ -220,6 +243,7 @@ function countHouseInResults(house) {
     countPlayerHouses.push(houseCount);
 }
 
+/* Update/Create and show DOM elements for final user houses + calculate user selection of houses in percentage */
 function showFinalHouses() {
     if (playerFinalHouses.length > 1) {
         sortingResult.innerHTML = "YOU EQUALLY BELONG TO<br>HOUSES ";
@@ -264,6 +288,8 @@ function showFinalHouses() {
     }
 }
 
+/* Arrange house crest images in circle (in section Memory Game - Game Result - Great Houses Presentation)
+=> Source/Inspiration : https://jsfiddle.net/skwidbreth/q59s90oy/ */
 function createCircle(listItems) {
     for (var i = 0; i < listItems.length; i++) {
         var offsetAngle = 360 / listItems.length;

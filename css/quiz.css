@@ -1,11 +1,9 @@
+/* CSS for Quiz & Sorting Pages */
+
+/* Quizes with common elements with Sorting */
+
 #quiz-starter-img {
     width: 500px;
-}
-
-#quiz-container,
-#sorting-container{
-    padding-left: calc(var(--bs-gutter-x) * .5) !important;
-    padding-right: calc(var(--bs-gutter-x) * .5) !important;
 }
 
 .white-card {
@@ -21,6 +19,12 @@
 
 .got-icon {
     width: 160px;
+}
+
+#quiz-container,
+#sorting-container{
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    padding-right: calc(var(--bs-gutter-x) * .5) !important;
 }
 
 .quiz-container,

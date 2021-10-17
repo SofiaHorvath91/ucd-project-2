@@ -1,11 +1,23 @@
+#index-got {
+    width: 200px;
+    height: auto;
+}
+
 #index-throne {
     width: 300px;
     height: auto;
 }
 
-#index-got {
-    width: 200px;
-    height: auto;
+/* Cards for Quizes & Games*/
+
+.buttons-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 50%;
+    margin: auto;
 }
 
 .index-card {
@@ -21,6 +33,10 @@
 
 .index-card h4 {
     color: white;
+}
+
+.black-text-border {
+    text-shadow: var(--black-text-border);
 }
 
 .index-card h3{
@@ -50,19 +66,11 @@
     height: 100px;
 }
 
-.buttons-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    width: 50%;
-    margin: auto;
-}
-
 .my-btns {
     margin: 0 0.5rem 0.5rem 0.5rem;
 }
+
+/* House Sorting */
 
 #index-sorting-btn{
     font-weight: bolder;

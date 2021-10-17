@@ -1,13 +1,21 @@
+/* Hangman Game => Source/inspiration : https://www.udemy.com/course/web-projects-with-vanilla-javascript/ */
+
+/* DOM elements */
+
 var hangmanStarterDiv = document.getElementById("hangman-starter-div");
 var hangmanGameContainer = document.getElementById("hangman-game-container");
+
 var word = document.getElementById("hangman-word");
 var hangmanImg = document.getElementById("hangman-img");
 var wrongLettersP = document.getElementById("wrong-letters");
 var playerLetterMobile = document.getElementById("hangman-game-mobile");
+
 const popup = document.getElementById('hangman-popup-container');
 const finalMessage = document.getElementById('hangman-final-message');
 const finalWord = document.getElementById('hangman-final-word');
 const hangmanResultImg = document.getElementById("hangman-result-img");
+
+/* Variables */
 
 const words = [
     'red wedding',
@@ -32,6 +40,9 @@ var actualLetter;
 
 var imgIndex = 0;
 
+/* jQuery */
+
+/* Handling click on Start Game button (Show Player layout + Start game) */
 $('#hangman-start-btn').click(function () {
     hangmanStarterDiv.classList.add('hidden');
     hangmanGameContainer.classList.remove('hidden');
@@ -43,6 +54,7 @@ $('#hangman-start-btn').click(function () {
     showWord();
 });
 
+/* Handling letter input (text input DOM element) by user for mobile device */
 $('#player-letter-mobile').on('input', function () {
     const letter = $(this).val();
     actualLetter = letter;
@@ -50,6 +62,7 @@ $('#player-letter-mobile').on('input', function () {
     this.value = "";
 });
 
+/* Handling click on New Game button (in popup window) */
 $('#hangman-newgame-btn').click(function () {
     correctletters.splice(0);
     wrongLetters.splice(0);
@@ -68,20 +81,28 @@ $('#hangman-newgame-btn').click(function () {
     popup.style.display = 'none';
 });
 
+/* Handling click on Exit Game button (in popup window) */
 $('#hangman-exit-btn').click(function () {
     location.reload();
 });
 
+/* Event listeners */
+
+/* Handling letter input (pressing key down) by user for desktop */
 window.addEventListener('keydown', e => {
     const letter = e.key;
     actualLetter = letter;
     checkLetter(actualLetter);
 });
 
+/* Functions */
+
+/* Check if player uses mobile device */
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
 
+/* Showing lines & letters for current random word during game + handle winner game end */
 function showWord() {
     word.innerHTML =
         `${selectedWord
@@ -101,10 +122,12 @@ function showWord() {
     }
 }
 
+/* Check if user character input is a letter */
 function isLetter(char) {
     return (/[a-zA-Z]/).test(char);
 }
 
+/* Check user character input, if it is in current word and update word/wrong letters accordingly */
 function checkLetter(letter) {
     if (isLetter(letter) && letter.length == 1) {
         if (selectedWord.includes(letter)) {
@@ -130,10 +153,12 @@ function checkLetter(letter) {
     }
 }
 
+/* Show alert if user character input was already selected */
 function showNotification() {
     alert("You have already entered this letter!");
 }
 
+/* Show & update wrong letters selected by user during game  + handle looser game end */
 function updateWrongLetters(letter) {
     imgIndex++;
     hangmanImg.src = "img/hangman/" + imgIndex.toString() + ".png";
@@ -151,6 +176,7 @@ function updateWrongLetters(letter) {
     }
 }
 
+/* Show user result in popup window */
 function showResult(result) {
     popup.style.display = 'flex';
     finalWord.innerText = selectedWord;

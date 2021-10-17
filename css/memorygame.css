@@ -1,3 +1,9 @@
+#memorygame-footer {
+    margin-top: 4.5rem;
+}
+
+/* Memory Game - Starter Layout */
+
 #memorygame-starter-img {
     width: 250px;
 }
@@ -7,6 +13,8 @@
     font-size: 25px;
     text-align: center;
 }
+
+/* Memory Game - Player Layout */
 
 #memorygame-timer {
     font-weight: bold;
@@ -36,6 +44,25 @@
     border-radius: 0 !important;
     box-shadow: none !important;
 }
+
+/* Memory Game - Result Layout */
+
+#memorygame-newgame-btn,
+#memorygame-exit-btn {
+    margin: 0 0.2rem 0 0.2rem;
+}
+
+.final-result-img {
+    width: 250px;
+    height: 200px;
+}
+
+.game-results-item {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Memory Game - Result Layout - Houses1 Images in Circle => Source/inspiration : https://jsfiddle.net/skwidbreth/q59s90oy/ */
 
 .circle-container {
     height: 300px;
@@ -68,24 +95,7 @@
     width: 60px;
 }
 
-.final-result-img {
-    width: 250px;
-    height: 200px;
-}
-
-.game-results-item {
-    font-weight: bold;
-    margin-top: 0.5rem;
-}
-
-#memorygame-newgame-btn,
-#memorygame-exit-btn {
-    margin: 0 0.2rem 0 0.2rem;
-}
-
-#memorygame-footer {
-    margin-top: 4.5rem;
-}
+/* Memory Game - Result Layout - Houses Modal => Source/inspiration : https://www.w3schools.com/howto/howto_css_modal_images.asp */
 
 .modal {
     display: none; 
