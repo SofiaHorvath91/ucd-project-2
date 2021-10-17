@@ -1,66 +1,66 @@
 HOUSE LANNISTER <br>
-Sigil : A golden lion rampant on a crimson field<br>
-Words : "Hear Me Roar"<br>
-Common saying : "A Lannister always pays his debts."<br>
+Sigil :<br>A golden lion rampant on a crimson field<br>
+Words :<br>"Hear Me Roar"<br>
+Common saying :<br>"A Lannister always pays his debts."<br>
 Seat : Casterly Rock<br>
-Region : The Westerlands<br>
-Titles : Lords of Casterly Rock / Shields of Lannisport / Wardens of the West
+Region :The Westerlands<br>
+Titles :<br>Lords of Casterly Rock / Shields of Lannisport / Wardens of the West
 ***
 HOUSE TARGARYEN <br>
-Sigil : A red three-headed dragon on a black field<br>
-Words : "Fire and Blood"<br>
-Common saying : "Madness and greatness are two sides of the same coin and every time a new Targaryen is born, the gods toss the coin."<br>
+Sigil :<br> A red three-headed dragon on a black field<br>
+Words :<br> "Fire and Blood"<br>
+Common saying :<br> "Madness and greatness are two sides of the same coin and every time a new Targaryen is born, the gods toss the coin."<br>
 Seat : Dragonstone<br>
 Region : Seven Kingdom (formerly)<br>
-Titles : Lords of Dragonstone / Dragonlords / Kings of the Andals and the First Men (formerly)
+Titles :<br> Lords of Dragonstone / Dragonlords / Kings of the Andals and the First Men (formerly)
 ***
 HOUSE TYRELL <br>
-Sigil : A golden rose on a green field<br>
-Words : "Growing Strong"<br>
+Sigil :<br> A golden rose on a green field<br>
+Words :<br> "Growing Strong"<br>
 Seat : Highgarden<br>
 Region : The Reach<br>
-Titles : Lords of Highgarden / Wardens of the South
+Titles :<br> Lords of Highgarden / Wardens of the South
 ***
 HOUSE GREYJOY <br>
-Sigil : A golden kraken on a black field<br>
-Words : "We Do Not Sow"<br>
-Common saying : "What is dead may never die."<br>
+Sigil :<br> A golden kraken on a black field<br>
+Words :<br> "We Do Not Sow"<br>
+Common saying :<br> "What is dead may never die."<br>
 Seat : Salt Throne, Pyke<br>
 Region : Iron Islands<br>
-Titles : Lords of the Iron Islands / Kings of Salt and Rock
+Titles :<br> Lords of the Iron Islands / Kings of Salt and Rock
 ***
 HOUSE MARTELL <br>
-Sigil : A red sun pierced by a gold spear on an orange field<br>
-Words : "Unbowed, Unbent, Unbroken"<br>
+Sigil :<br> A red sun pierced by a gold spear on an orange field<br>
+Words :<br> "Unbowed, Unbent, Unbroken"<br>
 Seat : Sunspear<br>
 Region : Dorne<br>
-Titles : Lords of Sunspear / Princes of Dorne
+Titles :<br> Lords of Sunspear / Princes of Dorne
 ***
 HOUSE TULLY <br>
-Sigil : A silver trout leaping on a red and blue background<br>
-Words : "Family, Duty, Honor" <br>
+Sigil :<br> A silver trout leaping on a red and blue background<br>
+Words :<br> "Family, Duty, Honor" <br>
 Seat : Riverrun<br>
 Region : The Riverlands<br>
-Titles : Lords of Riverrun / Lords Paramount of the Trident
+Titles :<br> Lords of Riverrun / Lords Paramount of the Trident
 ***
 HOUSE ARRYN <br>
-Sigil : A white falcon volant and crescent moon on a blue field<br>
-Words : "As High as Honor"<br>
+Sigil :<br> A white falcon volant and crescent moon on a blue field<br>
+Words :<br> "As High as Honor"<br>
 Seat : The Eyrie<br>
 Region : The Vale of Arryn<br>
-Titles : Lords of the Eyrie / Defenders of the Vale / Wardens of the East
+Titles :<br> Lords of the Eyrie / Defenders of the Vale / Wardens of the East
 ***
 HOUSE BARATHEON <br>
-Sigil : A crowned black stag salient on a gold field<br>
-Words : "Ours is the Fury"<br>
+Sigil :<br> A crowned black stag salient on a gold field<br>
+Words :<br> "Ours is the Fury"<br>
 Seat : Storm's End<br>
 Region : The Stormlands<br>
-Titles : Lords of Storm's End / Kings of the Andals and the First Men (formerly)
+Titles :<br> Lords of Storm's End / Kings of the Andals and the First Men (formerly)
 ***
 HOUSE STARK <br>
-Sigil : A grey direwolf's head facing sinister on a dark gray field<br>
-Words : "Winter Is Coming"<br>
-Common saying : "The North remembers."<br>
+Sigil :<br> A grey direwolf's head facing sinister on a dark gray field<br>
+Words :<br> "Winter Is Coming"<br>
+Common saying :<br> "The North remembers."<br>
 Seat : Winterfell<br>
 Region : The North<br>
-Titles : Lords of Winterfell / Kings & Queens in the North / Wardens of the North
+Titles :<br> Lords of Winterfell / Kings & Queens in the North / Wardens of the North

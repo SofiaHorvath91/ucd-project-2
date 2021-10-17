@@ -1,0 +1,99 @@
+1.) Which element would you choose?
+- Fire / targaryen,lannister,martell
+- Water / greyjoy,tully,arryn
+- Earth / tyrell,baratheon,stark
+***
+2.) If you have an enemy, how do you handle it?
+- Fight them / martell,stark,baratheon
+- Murder them / targaryen,lannister,greyjoy
+- Negotiate them / arryn,tully,tyrell
+***
+3.) You forgot to study for an exam, how do you proceed?
+- I will just not show up, whatever / martell,baratheon,targaryen,greyjoy
+- I will cheat to pass / lannister,tyrell
+- I accept that I will fail this time / stark,arryn,tully
+***
+4.) If you encounter something you don't like, what do you do?
+- I rebel against it / baratheon,stark,greyjoy
+- I destroy it / lannister,targaryen,martell
+- I learn to live with it / tully,arryn,tyrell
+***
+5.) Which part of the day do you prefer?
+- Dawn / tully,arryn
+- Daytime / lannister,tyrell,martell,baratheon
+- Night / stark,targaryen,greyjoy
+***
+6.) Which weapon would you prefer?
+- Sword / lannister,stark,targaryen,baratheon,tyrell
+- Bow & Arrow / tully,greyjoy,arryn
+- Spear / martell
+***
+7.) Which jeyellery would you choose?
+- Something gold / lannister,tyrell,martell,baratheon
+- Something silver / arryn,tully,stark
+- I would only wear a crown / greyjoy,targaryen
+***
+8.) Which of these values is the most important?
+- Power / lannister,targaryen,greyjoy
+- Family / tully,tyrell,martell
+- Honor / arryn,stark,baratheon
+***
+9.) Which superpower would you choose?
+- Flying / arryn,targaryen
+- Superhuman power / stark,baratheon,greyjoy,martell
+- Mindreading / lannister,tyrell,tully
+***
+10.) Which season do you like the most?
+- Spring / tyrell,arryn,baratheon
+- Summer / martell,targaryen,lannister,tully
+- Winter / stark,greyjoy
+***
+11.) Which color do you prefer to wear?
+- Red / targaryen,lannister,martell,baratheon
+- Green / arryn,tully,tyrell
+- Grey / stark,greyjoy
+***
+12.) How would you spend your vacation?
+- Something new each day / martell,baratheon,tyrell
+- Relax with my close ones / stark,arryn,tully
+- No vacation, have a kingdom to build / targaryen,lannister,greyjoy
+***
+13.) If somebody hurts your loved ones, you...
+- avenge it fairly / stark,arryn,tully
+- simply destroy the sinner on the spot / targaryen,martell,baratheon
+- will wait for the time to hit back even harder / tyrell,lannister,greyjoy
+***
+14.) If you have to make a hard decision, you generally...
+- do what is right even if it's hard / stark,tully,baratheon,targaryen
+- do what is easy even if it's bad / lannister,greyjoy
+- postpone it until better time if possible / arryn,tyrell
+***
+15.) Which pet would you like to have?
+- Cat / tyrell,arryn,lannister
+- Dog / stark,tully,baratheon
+- Something that can eat my enemies / targaryen,martell,greyjoy
+***
+16.) Which face of the god you respect most?
+- The Warrior, face of strength / baratheon,martell,targaryen,greyjoy
+- The Crone, face of wisdom / arryn,tyrell,lannister
+- The Father, face of justice / stark,tully
+***
+17.) Which one is the closest to your weak point?
+- Being too hotheaded / stark,martell,baratheon
+- Being too self centric / lannister,targaryen,greyjoy
+- Being too passive / arryn,tully,tyrell
+***
+18.) If you are given a present, you prefer to get...
+- something unique and expensive / tyrell,arryn,lannister,martell
+- something useful in everyday life / greyjoy,baratheon,tully
+- something symbolic and personal / stark,targaryen
+***
+19.) Where would you live most preferably?
+- Next to the sea / tully,greyjoy,baratheon,lannister
+- On a plain and broad land / tyrell,martell,stark
+- In the mountains / arryn,targaryen
+***
+20.) Which subject you like(d) the most in school?
+- History / lannister,stark,targaryen,tully
+- P.E. / martell,baratheon,greyjoy
+- Arts / arryn, tyrell

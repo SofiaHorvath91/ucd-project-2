@@ -17,10 +17,10 @@ var memorygamePlayerTime = document.getElementById("memorygame-player-time");
 var memorygamePlayerPairs = document.getElementById("memorygame-player-pairs");
 
 var circleItems = document.getElementsByClassName("circle-list-item");
-var modal = document.getElementById("circle-img-modal");
-var modalImg = document.getElementById("modal-img");
-var modalCaption = document.getElementById("modal-caption");
-var closeModal = document.getElementById("close-modal");
+var modal = document.getElementById("circle-img-modal-memorygame");
+var modalImg = document.getElementById("modal-img-memorygame");
+var modalCaption = document.getElementById("modal-caption-memorygame");
+var closeModal = document.getElementById("close-modal-memorygame");
 
 const cards = [
     'house-tully',
@@ -121,7 +121,7 @@ $('.circle-list-item').click(function () {
         });
 });
 
-$('#close-modal').click(function () {
+$('#close-modal-memorygame').click(function () {
     modal.style.display = "none";
 });
 

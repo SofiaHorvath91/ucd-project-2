@@ -14,7 +14,7 @@
 }
 
 #memorycards-container {
-    width: 70%;
+    width: 50%;
 }
 
 .cards-column {
@@ -92,7 +92,7 @@
     display: none; 
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -111,18 +111,17 @@
     border: transparent;
 }
 
-#modal-caption {
-    margin: auto;
+.modal-caption {
+    margin: 1rem auto 1rem auto;
     display: block;
     width: 100%;
     text-align: center;
     color: white;
-    padding: 10px 0;
-    height: 150px;
     font-size: 18px;
 }
 
-.modal-content, #modal-caption {  
+.modal-content, 
+.modal-caption {  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -139,9 +138,9 @@
     to {transform:scale(1)}
 }
 
-#close-modal {
+.close-modal {
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
@@ -149,8 +148,8 @@
     transition: 0.3s;
 }
 
-#close-modal:hover,
-#close-modal:focus {
+.close-modal:hover,
+.close-modal:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;

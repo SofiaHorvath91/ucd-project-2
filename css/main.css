@@ -13,6 +13,8 @@
   --black-text-border: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   --gold-text-border: -2px 0 #ffc107, 0 2px #ffc107, 2px 0 #ffc107,
     0 -2px #ffc107;
+  --gold-text-border-thin: -1px 0 #ffc107, 0 1px #ffc107, 1px 0 #ffc107,
+    0 -1px #ffc107;
   --h4-custom: calc(1.275rem + 0.3vw) !important;
   --facebook: #3b5998;
   --twitter: #55acee;
@@ -27,16 +29,16 @@
   font-family: 'IM Fell French Canon SC', serif;
 }
 
-html {
-  height: 100%;
+body {
+  margin: 100px 0 100px 0 !important;
+  flex-wrap: wrap;
+  clear: both;
 }
 
-body {
-  margin: 0px;
-  flex-wrap: wrap;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
+header,
+main{
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 p {
@@ -89,13 +91,23 @@ hr {
 /* Navbar => Source / Inspiration : https://getbootstrap.com/docs/4.0/components/navbar/ */
 
 nav {
+  right: 0;
+  left: 0;
   margin-bottom: 0.5rem;
+  background-color: rgba(230, 230, 230, 0.7);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(200, 200, 200, 0.9);
+  -moz-box-shadow: 0 8px 6px -6px rgba(200, 200, 200, 0.9);
+  box-shadow: 0 8px 6px -6px rgba(200, 200, 200, 0.9);
 }
 
-.navbar,
-.navbar-container {
+.navbar {
   width: 100%;
-  margin: 0.2rem 0 0.2rem 0;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-container{
+  width: 100%;
 }
 
 .bg-dark {
@@ -114,8 +126,7 @@ nav {
 
 .nav-link:hover {
   color: black !important;
-  text-shadow: -1px 0 var(--golden), 0 1px var(--golden), 1px 0 var(--golden),
-    0 -1px var(--golden);
+  text-shadow: var(--gold-text-border-thin);
 }
 
 .logo-img {
@@ -174,11 +185,13 @@ nav {
 
 .footer {
   background-color: var(--darkgray);
-  height: auto;
   display: block;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  position: fixed;
   padding: 1rem 0 1rem 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .footer p {
@@ -268,6 +281,7 @@ nav {
     font-size: 16px;
   }
 
+  #index-throne,
   #got-westeros-crest {
     width: 250px;
   }
@@ -276,8 +290,13 @@ nav {
     width: 300px;
   }
 
+  .sorting-card{
+    font-size: 0.95rem;
+  }
+
+  .sorting-card,
   .quiz-card {
-    width: 280px;
+    width: 300px;
     padding: 0 0.2rem 0 0.2rem;
   }
 
@@ -309,11 +328,42 @@ nav {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
+  #quiz-starter-img {
+    width: 260px;
+  }
+
+  .modal-content{
+    width: 240px;
+  }
+
   .letter,
   .empty-space {
     font-size: 20px;
     margin: 0 2px;
     width: 15px;
+  }
+
+  .buttons-container{
+    width:100%;
+  }
+
+  .index-card,
+  .sorting-card,
+  .quiz-card {
+    width: 260px;
+    padding: 0 0.2rem 0 0.2rem;
+  }
+
+  #index-sorting-btn{
+    width: 270px;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+  }
+
+  #quiz-playagain-btn,
+  #quiz-othergame-btn{
+    font-size: 16px;
+    width: 140px;
   }
 }

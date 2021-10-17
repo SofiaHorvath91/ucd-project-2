@@ -153,11 +153,3 @@ function updateWrongLetters(letter) {
         popup.style.display = 'flex';
     }
 }
-
-let promiseUpdateWrongLetters = new Promise(function (myResolve) {
-    myResolve(actualLetter);
-});
-
-promiseUpdateWrongLetters.then(
-    function (value) { updateWrongLetters(value); }
-);

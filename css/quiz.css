@@ -22,11 +22,11 @@
 .quiz-btns button,
 .correct-answer,
 .wrong-answer,
-#quiz-question {
+.quiz-question {
     font-weight: bold;
 }
 
-#quiz-question{
+.quiz-question{
     font-size: var(--h4-custom);
 }
 
@@ -50,4 +50,35 @@ input[type=checkbox] {
 
 .wrong-answer{
     color:red;
+}
+
+/* Sorting */
+
+.sorting-result-img{
+    width: 140px;
+    margin: 0 0.5rem 0.5rem;
+}
+
+.sorting-card{
+    width: 400px;
+    height: 420px;
+    display: flex;
+    margin: 1rem auto 1rem auto;
+    align-items:center;
+    justify-content:center;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+#sorting-playagain-btn{
+    font-size: 1.6rem;
+}
+
+#caption-percentage-sorting{
+    font-size: 35px !important;
+    color: rgba(0,0,0,0.95);
+    font-weight: bolder;
+    text-shadow: var(--gold-text-border-thin);
 }
