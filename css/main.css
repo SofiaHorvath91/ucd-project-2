@@ -368,6 +368,10 @@ nav {
     width: 260px;
   }
 
+  .results-details{
+    width:100% !important;
+  }
+
   .modal-content{
     width: 240px;
   }

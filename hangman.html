@@ -87,7 +87,10 @@
                     </header>
                     <div class="mt-4 mb-2">
                         <button id="hangman-start-btn" class="btn btn-warning btn-lg mb-2">
-                            <strong>Play the Game</strong>
+                            <strong>Play Game</strong>
+                        </button>
+                        <button id="hangman-rules-btn" class="btn btn-warning btn-lg mb-2">
+                            <strong>Game Rules</strong>
                         </button>
                     </div>
                 </section>
@@ -117,9 +120,22 @@
                 </div>
             </div>
         </div>
-        <!-- Hangman Game - Game End Popup with Result -->
+        <!-- Hangman Game - Popup window -->
         <div class="popup-container" id="hangman-popup-container">
-            <div class="popup">
+            <!-- Hangman Game - Rules Popup -->
+            <div class="popup hidden" id="hangman-popup-rules">
+                <h5 class="fw-bold">
+                    After starting game, press a key to select a letter and then see if it is in your word.
+                    <br>If you are using mobile device, click in text input area to enter a letter.
+                    <br>If you can guess the word before you are hanged, you win!
+                    <br>If you run out of possibilities, no worries, you can always play again!
+                </h5>
+                <button id="hangman-rules-close-btn" class="btn btn-warning btn-lg mb-2 mt-2">
+                    <strong>Back to Game</strong>
+                </button>
+            </div>
+            <!-- Hangman Game - Game End Popup with Result -->
+            <div class="popup hidden" id="hangman-popup-result">
                 <article>
                     <header>
                         <h3 id="hangman-final-message">Your Result</h3>

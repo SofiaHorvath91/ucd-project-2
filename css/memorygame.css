@@ -52,6 +52,10 @@
     margin: 0 0.2rem 0 0.2rem;
 }
 
+.results-details{
+    width:70% !important;
+}
+
 .final-result-img {
     width: 250px;
     height: 200px;
@@ -60,6 +64,7 @@
 .game-results-item {
     font-weight: bold;
     margin-top: 0.5rem;
+    padding: 0.2rem 0 0.2rem 0;
 }
 
 /* Memory Game - Result Layout - Houses1 Images in Circle => Source/inspiration : https://jsfiddle.net/skwidbreth/q59s90oy/ */

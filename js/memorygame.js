@@ -7,6 +7,8 @@ var memorygameContainer = document.getElementById("memorygame-container");
 var memorygameTimer = document.getElementById("memorygame-timer");
 
 const popup = document.getElementById('memorygame-popup-container');
+const popupResult = document.getElementById('memorygame-popup-result');
+const popupRules = document.getElementById('memorygame-popup-rules');
 const finalMessage = document.getElementById('memorygame-final-message');
 var memorygameResultImg = document.getElementById("memorygame-result-img");
 var memorygameResultsContainer = document.getElementById("memorygame-results-container");
@@ -63,6 +65,18 @@ var winner;
 
 /* jQuery */
 
+/* Handling click on Game Rules button (open popup window) */
+$('#memorygame-rules-btn').click(function () {
+    popup.style.display = 'flex';
+    popupRules.classList.remove("hidden");
+});
+
+/* Handling click on Game Rules Close button (close popup window) */
+$('#memorygame-rules-close-btn').click(function () {
+    popup.style.display = 'none';
+    popupRules.classList.add("hidden");
+});
+
 /* On Page load : Arrange house crest images in circle (in section Memory Game - Game Result - Great Houses Presentation) */
 $(function () {
     createCircle(circleItems);
@@ -109,6 +123,7 @@ $('#memorygame-result-btn').click(function () {
 
     showFinalResults();
     popup.style.display = 'none';
+    popupResult.add.remove("hidden");
 });
 
 /* Handling click on New Game button (in popup window) */
@@ -147,7 +162,7 @@ $('#close-modal-memorygame').click(function () {
 => Source/inspiration : https://www.w3schools.com/howto/howto_js_countdown.asp */
 function setCountDown(level) {
     var deadline = new Date();
-    deadline.setMinutes(deadline.getMinutes() + parseInt(level));
+    deadline.setMinutes(deadline.getMinutes() + (parseInt(level)));
 
     countdown = setInterval(function () {
 
@@ -250,6 +265,7 @@ function popupFinalResults(text) {
     }
     finalMessage.innerText = text;
     popup.style.display = 'flex';
+    popupResult.classList.remove("hidden");
 }
 
 /* Show detailed results after exiting game end popup window */

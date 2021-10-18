@@ -11,6 +11,9 @@ var wrongLettersP = document.getElementById("wrong-letters");
 var playerLetterMobile = document.getElementById("hangman-game-mobile");
 
 const popup = document.getElementById('hangman-popup-container');
+const popupRules = document.getElementById('hangman-popup-rules');
+const popupResult = document.getElementById('hangman-popup-result');
+
 const finalMessage = document.getElementById('hangman-final-message');
 const finalWord = document.getElementById('hangman-final-word');
 const hangmanResultImg = document.getElementById("hangman-result-img");
@@ -41,6 +44,18 @@ var actualLetter;
 var imgIndex = 0;
 
 /* jQuery */
+
+/* Handling click on Game Rules button (open popup window) */
+$('#hangman-rules-btn').click(function () {
+    popup.style.display = 'flex';
+    popupRules.classList.remove("hidden");
+});
+
+/* Handling click on Game Rules Close button (close popup window) */
+$('#hangman-rules-close-btn').click(function () {
+    popup.style.display = 'none';
+    popupRules.classList.add("hidden");
+});
 
 /* Handling click on Start Game button (Show Player layout + Start game) */
 $('#hangman-start-btn').click(function () {
@@ -79,6 +94,7 @@ $('#hangman-newgame-btn').click(function () {
     showWord();
 
     popup.style.display = 'none';
+    popupResult.classList.add("hidden");
 });
 
 /* Handling click on Exit Game button (in popup window) */
@@ -179,6 +195,8 @@ function updateWrongLetters(letter) {
 /* Show user result in popup window */
 function showResult(result) {
     popup.style.display = 'flex';
+    popupResult.classList.remove("hidden");
+
     finalWord.innerText = selectedWord;
     if (result == "winner") {
         finalMessage.innerText = 'Congratulations! You Won!';
