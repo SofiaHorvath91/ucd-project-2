@@ -9,7 +9,6 @@
   --golden: #ffc107;
   --hover-shadow: 0 0 10px black;
   --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  --red-text-border: -2px 0 red, 0 2px red, 2px 0 red, 0 -2px red;
   --black-text-border: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   --gold-text-border: -2px 0 #ffc107, 0 2px #ffc107, 2px 0 #ffc107,
     0 -2px #ffc107;
