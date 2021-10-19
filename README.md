@@ -140,7 +140,7 @@ Footer\
 
 ### 1. Automated tests
 * HTML\
-Passing the HTML of all pages through the [W3C Markup Validator](https://validator.w3.org/) and no errors have been found, only 1 warning (empty <h2> element used for storing wrong user letters in hangman game, so it is intended to be empty and later filled by user input through Javascript).
+Passing the HTML of all pages through the [W3C Markup Validator](https://validator.w3.org/) and no errors have been found, only 1 warning (empty header2 element used for storing wrong user letters in hangman game, so it is intended to be empty and later filled by user input through Javascript).
   * [Index Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-html-index.pdf)
   * [Sorting Quiz Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-html-sorting.pdf)
   * [Quizes Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-html-quiz.pdf)
@@ -164,7 +164,7 @@ Tested with Samsung A5, Galaxy Fold, iPhone 5, and iPad, and webpage works well,
 Tested for available devices, webpage works well, responsive as intended, no style deformations and no error messages for Javascript.
   
 ### 3. Accessibility tests
-The entire website was verified about accessibility using [Wave](https://wave.webaim.org/). Only few stylistic errors found (low contrast errors for games & quizes cards on Index page and one error hown for empty <h2> element used for storing wrong user letters in hangman game which is intended to be empty and later filled by user input through Javascript), alerts related mostly to heading elements hierarchy.
+The entire website was verified about accessibility using [Wave](https://wave.webaim.org/). Only few stylistic errors found (low contrast errors for games & quizes cards on Index page and one error hown for empty header2 element used for storing wrong user letters in hangman game which is intended to be empty and later filled by user input through Javascript), alerts related mostly to heading elements hierarchy.
 * [Index Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-index.png) | [Index Page Wave Contrast Errors](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-index-contrasterrors.png)
 * Sorting Quiz Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting.png) | Sorting Quiz Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting-alerts.png)
 * [Quizes Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-quiz.png) | [Quizes Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-quiz-alerts.png)
