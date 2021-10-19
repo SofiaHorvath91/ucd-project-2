@@ -67,19 +67,19 @@ The very basic skeleton of the site was modelled by Wireframes via Balsamiq, and
   * Featured on all pages, the navigation bar includes links to all subpages and is identical on each page for smooth navigation. The navbar is fixed and fully responsive on all screen sizes: for smaller devices, a hamburger navbar view is included with the help of Bootstrap for better UX and easier navigation.
 
 Navbar on Desktop\
-![Navbar desktop](/img/readme/navbar-desktop.PNG)
+![Navbar desktop](/img/readme/navbar-desktop.png)
 Navbar on Mobile\
-![Navbar mobile](/img/readme/navbar-mobile.PNG)
+![Navbar mobile](/img/readme/navbar-mobile.png)
 
 * __Index page__
   * Attention-catching site title and visually backed up links to the main site pages (Quizes and Games) for easier navigation. The Index page also offers the entry point to the Sorting Quiz which allow users to immediately start discovering the site and the world of Ice & Fire.
 
 Index Page - Site Title\
-![Index Page](/img/readme/page-index1.PNG)
+![Index Page](/img/readme/page-index1.png)
 Index Page - Games & Quizes\
-![Index Page](/img/readme/page-index2.PNG)
+![Index Page](/img/readme/page-index2.png)
 Index Page - Sorting Quiz\
-![Index Page](/img/readme/page-index3.PNG)
+![Index Page](/img/readme/page-index3.png)
 
 * __Sorting Quiz page__
   * After clicking on Find My House button on Index page, user is navigated to Sorting Quiz page and is prompted to start the sorting quiz (a series of personlity-based questions) which will then end with showing the user's main house(s) and also the results for all other houses, along with house descriptions.
@@ -129,7 +129,7 @@ Memory Game Page - Game Result\
   * The footer section includes copyrights of GoT books/series, allowing user to navigate to external sites to discover GoT books/series annd their creators. The footer also allows to share this website with other people through social media sites and email via social share buttons. 
 
 Footer\
-![Footer](/img/readme/page-footer.PNG)
+![Footer](/img/readme/page-footer.png)
 
 ### 2. Future Features
 * Word-Finder game
