@@ -67,7 +67,7 @@ The very basic skeleton of the site was modelled by Wireframes via Balsamiq, and
   * Featured on all pages, the navigation bar includes links to all subpages and is identical on each page for smooth navigation. The navbar is fixed and fully responsive on all screen sizes: for smaller devices, a hamburger navbar view is included with the help of Bootstrap for better UX and easier navigation.
 
 Navbar on Desktop\
-![Navbar desktop](/img/readme/navbar-desktop.png)
+![Navbar desktop](/img/readme/navbar-desktop.png)\
 Navbar on Mobile\
 ![Navbar mobile](/img/readme/navbar-mobile.png)
 
