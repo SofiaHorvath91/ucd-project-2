@@ -135,7 +135,7 @@ Footer\
 * Word-Finder game
 * Trial-By-Combat game
 * Additional quizes (Targaryen-history, Houses of Westeros etc.)
-* 
+
 ## Code validation
 
 ### 1. Automated tests
