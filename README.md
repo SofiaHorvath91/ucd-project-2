@@ -1,4 +1,4 @@
-# Games of GoT (UCD Project 1)
+# Games of GoT (UCD Project 2)
 Wander is Westeros & play the Games of GoT!
 
 In the Game of Thrones, you win or you die...but in the Games of GoT, you win or you just have fun!\
@@ -166,9 +166,9 @@ Tested for available devices, webpage works well, responsive as intended, no sty
 ### 3. Accessibility tests
 The entire website was verified about accessibility using [Wave](https://wave.webaim.org/). Only few stylistic errors found (low contrast errors for games & quizes cards on Index page and one error hown for empty header2 element used for storing wrong user letters in hangman game which is intended to be empty and later filled by user input through Javascript), alerts related mostly to heading elements hierarchy.
 * [Index Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-index.png) | [Index Page Wave Contrast Errors](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-index-contrasterrors.png)
-* Sorting Quiz Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting.png) | Sorting Quiz Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting-alerts.png)
+* [Sorting Quiz Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting.png) | [Sorting Quiz Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting-alerts.png)
 * [Quizes Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-quiz.png) | [Quizes Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-quiz-alerts.png)
-* Hangman Game Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-hangman.png) | Hangman Game Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-hangman-alerts.png)
+* [Hangman Game Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-hangman.png) | [Hangman Game Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-hangman-alerts.png)
 * [Memory GamePage Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-memorygame.png) | [Memory Game Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-memorygame-alerts.png)
   
 ### 4. Bugs and Solution
