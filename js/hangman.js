@@ -2,21 +2,21 @@
 
 /* DOM elements */
 
-var hangmanStarterDiv = document.getElementById("hangman-starter-div");
-var hangmanGameContainer = document.getElementById("hangman-game-container");
+let hangmanStarterDiv = document.getElementById("hangman-starter-div");
+let hangmanGameContainer = document.getElementById("hangman-game-container");
 
-var word = document.getElementById("hangman-word");
-var hangmanImg = document.getElementById("hangman-img");
-var wrongLettersP = document.getElementById("wrong-letters");
-var playerLetterMobile = document.getElementById("hangman-game-mobile");
+let word = document.getElementById("hangman-word");
+let hangmanImg = document.getElementById("hangman-img");
+let wrongLettersP = document.getElementById("wrong-letters");
+let playerLetterMobile = document.getElementById("hangman-game-mobile");
 
 const popup = document.getElementById('hangman-popup-container');
 const popupRules = document.getElementById('hangman-popup-rules');
-const popupResult = document.getElementById('hangman-popup-result');
+let popupResult = document.getElementById('hangman-popup-result');
 
-const finalMessage = document.getElementById('hangman-final-message');
-const finalWord = document.getElementById('hangman-final-word');
-const hangmanResultImg = document.getElementById("hangman-result-img");
+let finalMessage = document.getElementById('hangman-final-message');
+let finalWord = document.getElementById('hangman-final-word');
+let hangmanResultImg = document.getElementById("hangman-result-img");
 
 /* Variables */
 
@@ -37,11 +37,10 @@ const words = [
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
-const correctletters = [];
-const wrongLetters = [];
-var actualLetter;
-
-var imgIndex = 0;
+let correctletters = [];
+let wrongLetters = [];
+let actualLetter;
+let imgIndex = 0;
 
 /* jQuery */
 
@@ -71,7 +70,7 @@ $('#hangman-start-btn').click(function () {
 
 /* Handling letter input (text input DOM element) by user for mobile device */
 $('#player-letter-mobile').on('input', function () {
-    const letter = $(this).val();
+    var letter = $(this).val();
     actualLetter = letter;
     checkLetter(actualLetter);
     this.value = "";
@@ -106,7 +105,7 @@ $('#hangman-exit-btn').click(function () {
 
 /* Handling letter input (pressing key down) by user for desktop */
 window.addEventListener('keydown', e => {
-    const letter = e.key;
+    var letter = e.key;
     actualLetter = letter;
     checkLetter(actualLetter);
 });
@@ -130,8 +129,8 @@ function showWord() {
             .join('')
         }`;
 
-    const innerWord = word.innerText.replace(/\n/g, '');
-    const selectedFinal = selectedWord.toLowerCase().replace(/ /g, '');
+    var innerWord = word.innerText.replace(/\n/g, '');
+    var selectedFinal = selectedWord.toLowerCase().replace(/ /g, '');
 
     if (innerWord === selectedFinal) {
         showResult("winner");

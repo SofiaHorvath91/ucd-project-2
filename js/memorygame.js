@@ -1,29 +1,29 @@
 /* DOM elements */
 
-var memorygameStarterDiv = document.getElementById("memorygame-starter-div");
-var memorygameLevel = document.getElementById("memorygame-levels");
+let memorygameStarterDiv = document.getElementById("memorygame-starter-div");
+let memorygameLevel = document.getElementById("memorygame-levels");
 
-var memorygameContainer = document.getElementById("memorygame-container");
-var memorygameTimer = document.getElementById("memorygame-timer");
+let memorygameContainer = document.getElementById("memorygame-container");
+let memorygameTimer = document.getElementById("memorygame-timer");
 
 const popup = document.getElementById('memorygame-popup-container');
-const popupResult = document.getElementById('memorygame-popup-result');
 const popupRules = document.getElementById('memorygame-popup-rules');
-const finalMessage = document.getElementById('memorygame-final-message');
-var memorygameResultImg = document.getElementById("memorygame-result-img");
-var memorygameResultsContainer = document.getElementById("memorygame-results-container");
+let popupResult = document.getElementById('memorygame-popup-result');
+let finalMessage = document.getElementById('memorygame-final-message');
+let memorygameResultImg = document.getElementById("memorygame-result-img");
+let memorygameResultsContainer = document.getElementById("memorygame-results-container");
 
-var memorygameFinalResultImg = document.getElementById("memorygame-finalresult-img");
-var memorygamePlayerLevel = document.getElementById("memorygame-player-level");
-var memorygamePlayerResult = document.getElementById("memorygame-player-result");
-var memorygamePlayerTries = document.getElementById("memorygame-player-tries");
-var memorygamePlayerTime = document.getElementById("memorygame-player-time");
-var memorygamePlayerPairs = document.getElementById("memorygame-player-pairs");
+let memorygameFinalResultImg = document.getElementById("memorygame-finalresult-img");
+let memorygamePlayerLevel = document.getElementById("memorygame-player-level");
+let memorygamePlayerResult = document.getElementById("memorygame-player-result");
+let memorygamePlayerTries = document.getElementById("memorygame-player-tries");
+let memorygamePlayerTime = document.getElementById("memorygame-player-time");
+let memorygamePlayerPairs = document.getElementById("memorygame-player-pairs");
 
-var circleItems = document.getElementsByClassName("circle-list-item");
-var modal = document.getElementById("circle-img-modal-memorygame");
-var modalImg = document.getElementById("modal-img-memorygame");
-var modalCaption = document.getElementById("modal-caption-memorygame");
+let circleItems = document.getElementsByClassName("circle-list-item");
+let modal = document.getElementById("circle-img-modal-memorygame");
+let modalImg = document.getElementById("modal-img-memorygame");
+let modalCaption = document.getElementById("modal-caption-memorygame");
 
 /* Variables */
 
@@ -53,15 +53,15 @@ const cardsRandom = cards
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
 
-const activeCards = [];
+let activeCards = [];
 
-var level;
-var countdown;
-var timer;
-var playerTries = 0;
-var playTime;
-var foundPairs = 0;
-var winner;
+let level;
+let countdown;
+let timer;
+let playerTries = 0;
+let playTime;
+let foundPairs = 0;
+let winner;
 
 /* jQuery */
 

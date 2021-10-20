@@ -1,35 +1,35 @@
 /* DOM elements */
 
-var quizStarterDiv = document.getElementById("quiz-starter-div");
-var quizContainer = document.getElementById("quiz-container");
-var quizResultsContainer = document.getElementById("quiz-results-container");
+let quizStarterDiv = document.getElementById("quiz-starter-div");
+let quizContainer = document.getElementById("quiz-container");
+let quizResultsContainer = document.getElementById("quiz-results-container");
 
-var quizCheckboxes = document.getElementsByClassName("quiz-cb");
-var quizAnswers = document.getElementsByClassName("answer-label");
+let quizCheckboxes = document.getElementsByClassName("quiz-cb");
+let quizAnswers = document.getElementsByClassName("answer-label");
 
-var quizQuestion = document.getElementById("quiz-question");
-var quizAnswer1 = document.getElementById("answer-label-1");
-var quizAnswer2 = document.getElementById("answer-label-2");
-var quizAnswer3 = document.getElementById("answer-label-3");
-var quizAnswer4 = document.getElementById("answer-label-4");
+let quizQuestion = document.getElementById("quiz-question");
+let quizAnswer1 = document.getElementById("answer-label-1");
+let quizAnswer2 = document.getElementById("answer-label-2");
+let quizAnswer3 = document.getElementById("answer-label-3");
+let quizAnswer4 = document.getElementById("answer-label-4");
 
-var quizCheckAnswerBtn = document.getElementById("check-answer-btn");
-var quizNextQuestionBtn = document.getElementById("next-question-btn");
-var quizEndBtn = document.getElementById("end-quiz-btn");
+let quizCheckAnswerBtn = document.getElementById("check-answer-btn");
+let quizNextQuestionBtn = document.getElementById("next-question-btn");
+let quizEndBtn = document.getElementById("end-quiz-btn");
 
-var quizResult = document.getElementById("quiz-player-result");
-var quizResultComment = document.getElementById("quiz-result-comment");
-var quizQuestionsTotal = document.getElementById("quiz-questions-total");
-var quizQuestionsCorrect = document.getElementById("quiz-questions-correct");
-var quizQuestionsIncorrect = document.getElementById("quiz-questions-incorrect");
+let quizResult = document.getElementById("quiz-player-result");
+let quizResultComment = document.getElementById("quiz-result-comment");
+let quizQuestionsTotal = document.getElementById("quiz-questions-total");
+let quizQuestionsCorrect = document.getElementById("quiz-questions-correct");
+let quizQuestionsIncorrect = document.getElementById("quiz-questions-incorrect");
 
 /* Variables */
 
 let quizName;
 let questions = [];
-var questionIndex = 0;
-var selectedAnswer;
-var correctAnswers = 0;
+let questionIndex = 0;
+let selectedAnswer;
+let correctAnswers = 0;
 
 /* jQuery */
 
@@ -153,7 +153,6 @@ $('#quiz-othergame-btn').click(function () {
 /* Handling quiz start (Show Player Layout + Read in questions from txt + Set first question) */
 function startQuiz(name) {
     quizName = name;
-
     quizStarterDiv.classList.add("hidden");
     quizContainer.classList.remove("hidden");
 

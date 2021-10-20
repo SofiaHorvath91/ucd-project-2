@@ -1,33 +1,33 @@
 /* DOM elements */
 
-var sortingContainer = document.getElementById("sorting-container");
-var sortingResultsContainer = document.getElementById("sorting-results-container");
+let sortingContainer = document.getElementById("sorting-container");
+let sortingResultsContainer = document.getElementById("sorting-results-container");
 
-var sortingCheckboxes = document.getElementsByClassName("quiz-cb");
+let sortingCheckboxes = document.getElementsByClassName("quiz-cb");
 
-var sortingQuestion = document.getElementById("sorting-question");
-var sortingAnswer1 = document.getElementById("sorting-answer-label-1");
-var sortingAnswer2 = document.getElementById("sorting-answer-label-2");
-var sortingAnswer3 = document.getElementById("sorting-answer-label-3");
-var sortingNextQuestionBtn = document.getElementById("sorting-next-btn");
-var sortingEndBtn = document.getElementById("sorting-end-btn");
+let sortingQuestion = document.getElementById("sorting-question");
+let sortingAnswer1 = document.getElementById("sorting-answer-label-1");
+let sortingAnswer2 = document.getElementById("sorting-answer-label-2");
+let sortingAnswer3 = document.getElementById("sorting-answer-label-3");
+let sortingNextQuestionBtn = document.getElementById("sorting-next-btn");
+let sortingEndBtn = document.getElementById("sorting-end-btn");
 
-var sortingResultsImgs = document.getElementById("final-houses");
-var sortingResultsTxt = document.getElementById("final-houses-txt");
-var sortingResult = document.getElementById("sorting-player-result");
-var sortingResultPercent = document.getElementById("sorting-result-percentage");
+let sortingResultsImgs = document.getElementById("final-houses");
+let sortingResultsTxt = document.getElementById("final-houses-txt");
+let sortingResult = document.getElementById("sorting-player-result");
+let sortingResultPercent = document.getElementById("sorting-result-percentage");
 
-var circleItems = document.getElementsByClassName("circle-list-item");
-var modal = document.getElementById("circle-img-modal-sorting");
-var modalImg = document.getElementById("modal-img-sorting");
-var modalCaption = document.getElementById("modal-caption-sorting");
-var modalCaptionPercent = document.getElementById("caption-percentage-sorting");
+let circleItems = document.getElementsByClassName("circle-list-item");
+let modal = document.getElementById("circle-img-modal-sorting");
+let modalImg = document.getElementById("modal-img-sorting");
+let modalCaption = document.getElementById("modal-caption-sorting");
+let modalCaptionPercent = document.getElementById("caption-percentage-sorting");
 
 /* Variables */
 
 let questions = [];
-var questionIndex = 0;
-var selectedAnswer;
+let questionIndex = 0;
+let selectedAnswer;
 let playerHouses = [];
 let countPlayerHouses = [];
 let playerFinalHouses = [];
@@ -176,7 +176,7 @@ $('.circle-list-item').click(function () {
                     modalCaption.innerHTML = houses[i];
                 }
             }
-            let houseCount = countPlayerHouses.find(h => h.house === id.split("-")[1]);
+            var houseCount = countPlayerHouses.find(h => h.house === id.split("-")[1]);
             var percent = parseFloat(((parseInt(houseCount.count) / questions.length) * 100)).toFixed(2);
             modalCaptionPercent.innerHTML = percent + "% (" + houseCount.count + " / " + questions.length + ")";
         });
@@ -257,7 +257,7 @@ function showFinalHouses() {
             sortingResult.innerHTML += " & ";
         }
 
-        let houseCount = countPlayerHouses.find(h => h.house === playerFinalHouses[i]);
+        var houseCount = countPlayerHouses.find(h => h.house === playerFinalHouses[i]);
         var percent = parseFloat(((parseInt(houseCount.count) / questions.length) * 100)).toFixed(2);
 
         if (i == 0) {
