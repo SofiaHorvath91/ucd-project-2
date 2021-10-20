@@ -58,7 +58,7 @@ The very basic skeleton of the site was modelled by Wireframes via Balsamiq, and
 * [Memory Game Page Wireframe](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/balsamiq-memorygame.png)
 ### 6. Style
 * Design & Colours
-  * When planning the project, to not distract users' attention from games and quizes, yet to provide appealing design, I went along with a minimalist design with simple yet expressing visual backup. For the color theme, I wanted a color pair with high contrast to emphasize action buttons and highlights, so I chose the dark/light grey - bright gold (#ffc107) pair which also suits well the royal theme.
+  * When planning the project, for not distracting users' attention from games and quizes, yet to provide appealing design, I went along with a minimalist design with simple yet expressing visual backup. For the color theme, I wanted a color pair with high contrast to emphasize action buttons and highlights, so I chose the dark/light grey - bright gold (#ffc107) pair which also suits well the royal theme.
 * Font Selection
   * The main font type was chosen with [Google Fonts](https://fonts.google.com/) and is used across the whole of the website: [IM Fell French Canon SC](https://fonts.google.com/specimen/IM+Fell+French+Canon+SC). This is a small cap, elegant font type which strongly ressembles to official GoT font type - I tested the free version of GoT type as well, but it does not handle special characters so I decided to use a very similar type.
 ## Features
@@ -155,7 +155,7 @@ Warnings are coming from dynamic CSS variables and imported style sheets which a
   * [Hangman Game Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-css-hangman.pdf)
   * [Memory Game Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-css-memorygame.pdf)
 * Javascript/jQuery\
-Passing all Javascript file through the [JSHint](https://jshint.com/) with [these configurations](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-configuration.PNG) and no errors have been found, only 1 warning shown for Sorting Quiz (one function within loop referencing outer scoped variable, necessary for proper working of sorting quiz).
+Passing all Javascript files through the [JSHint](https://jshint.com/) with [these configurations](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-configuration.PNG) and no errors have been found, only 1 warning shown for Sorting Quiz (one function within loop referencing outer scoped variable, necessary for proper working of sorting quiz).
   * [Sorting Quiz Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-sorting.PNG)
   * [Quizes Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-quiz.PNG)
   * [Hangman Game Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-hangman.PNG)
@@ -170,15 +170,15 @@ Tested with Samsung A5, Galaxy Fold, iPhone 5, and iPad, and webpage works well,
 Tested for available devices, webpage works well, responsive as intended, no style deformations and no error messages for Javascript.
   
 ### 3. Accessibility tests
-The entire website was verified about accessibility using [Wave](https://wave.webaim.org/). Only few stylistic errors found (low contrast errors for games & quizes cards on Index page and one error hown for empty header2 element used for storing wrong user letters in hangman game which is intended to be empty and later filled by user input through Javascript), alerts related mostly to heading elements hierarchy.
+The entire website was verified regarding accessibility using [Wave](https://wave.webaim.org/). Only few stylistic errors found (low contrast errors for games & quizes cards on Index page and one error hown for empty header2 element used for storing wrong user letters in hangman game which is intended to be empty and later filled by user input through Javascript), alerts related mostly to heading elements hierarchy.
 * [Index Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-index.png) | [Index Page Wave Contrast Errors](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-index-contrasterrors.png)
 * [Sorting Quiz Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting.png) | [Sorting Quiz Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-sorting-alerts.png)
 * [Quizes Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-quiz.png) | [Quizes Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-quiz-alerts.png)
 * [Hangman Game Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-hangman.png) | [Hangman Game Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-hangman-alerts.png)
-* [Memory GamePage Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-memorygame.png) | [Memory Game Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-memorygame-alerts.png)
+* [Memory Game Page Wave Result](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-memorygame.png) | [Memory Game Page Wave Alerts](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/wave-memorygame-alerts.png)
   
 ### 4. Bugs and Solution
-After building the Hangman game page, I realized that for mobile use, a workaround should be used as key-down/key-press event handling does not work mobile devices. Therefore a text input was included additionally to prompt mobile keyboard to appear and allow users to enter their letter input.
+After building the Hangman game page, I realized that for mobile use, a workaround should be used as key-down/key-press event handling does not work on mobile devices. Therefore a text input was included additionally to prompt mobile keyboard to appear and allow users to enter their letter input.
 ## Deployment
 The site was deployed to GitHub pages (find it [here](https://sofiahorvath91.github.io/ucd-project-2/)) after building it with [Visual Studio Code](https://code.visualstudio.com/) and pushing it to GitHub Repository via [GitHub Desktop](https://desktop.github.com/).
 1.	GitHub repository => Settings => GitHub Pages
@@ -205,8 +205,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 * The ['Game of Thrones'](https://en.wikipedia.org/wiki/Game_of_Thrones) television series belong to [George R. R. Martin](https://en.wikipedia.org/wiki/George_R._R._Martin) / [HBO](https://en.wikipedia.org/wiki/HBO) : [D. Benioff](https://en.wikipedia.org/wiki/David_Benioff) & [D. B. Weiss](https://en.wikipedia.org/wiki/D._B._Weiss)
   
 ### 1. Content
-* Informations about the story / characters of 'Song of Ice and Fire' books were verified via [Wiki of Ice and Fire]()
-* Informations about the story / characters of 'Game of Thrones' television series were verified via [Game of Thrones Wiki](https://gameofthrones.fandom.com/)
+* Information about the story / characters of 'Song of Ice and Fire' books were verified via [Wiki of Ice and Fire]()
+* Information about the story / characters of 'Game of Thrones' television series were verified via [Game of Thrones Wiki](https://gameofthrones.fandom.com/)
   
 ### 2. Media
 Pictures were treated with [Photoshop](http://www.apsportable.com/photoshop-cs6-portable-download-4/) and [tinyPNG](https://tinypng.com/) to have a better size for online presentation.
