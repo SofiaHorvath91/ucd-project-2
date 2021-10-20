@@ -154,7 +154,13 @@ Warnings are coming from dynamic CSS variables and imported style sheets which a
   * [Quizes Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-css-quiz.pdf)
   * [Hangman Game Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-css-hangman.pdf)
   * [Memory Game Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/w3validator-css-memorygame.pdf)
-  
+* Javascript/jQuery\
+Passing all Javascript file through the [JSHint](https://jshint.com/) with [these configurations](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-configuration.PNG) and no errors have been found, only 1 warning shown for Sorting Quiz (one function within loop referencing outer scoped variable, necessary for proper working of sorting quiz).
+  * [Sorting Quiz Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-sorting.PNG)
+  * [Quizes Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-quiz.PNG)
+  * [Hangman Game Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-hangman.PNG)
+  * [Memory Game Page Validation](https://github.com/SofiaHorvath91/ucd-project-2/blob/main/img/readme/jshint-memorygame.PNG)
+
 ### 2. Manual tests
 * Desktop\
 Mozilla Firefox, Google Chrome, Microsoft Edge: pages are working fine and have the corresponding style.
@@ -204,7 +210,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
   
 ### 2. Media
 Pictures were treated with [Photoshop](http://www.apsportable.com/photoshop-cs6-portable-download-4/) and [tinyPNG](https://tinypng.com/) to have a better size for online presentation.
-* Site Logo made by me by editing following source image : [PNGAll](https://www.pngall.com/game-of-thrones-logo-png/download/6809)
+* Site Logo made by me with [Photoshop](http://www.apsportable.com/photoshop-cs6-portable-download-4/) by editing following source image : [PNGAll](https://www.pngall.com/game-of-thrones-logo-png/download/6809)
 * Background image made by me with [Photoshop](http://www.apsportable.com/photoshop-cs6-portable-download-4/) by editing following source image : [WallUp](https://wallup.net/game-of-thrones-sigils-minimalism/)
 * Common sources :
   * For Hangman Game / Memory Game / Quizes Pages : Won game image from [DecalsCity](https://decalscity.com/products/game-of-thrones-crown-die-cut-vinyl-decal-sticker)
