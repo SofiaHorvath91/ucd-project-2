@@ -1,5 +1,5 @@
 # Games of GoT (UCD Project 2)
-Wander is Westeros & play the Games of GoT!
+Wander in Westeros & play the Games of GoT!
 
 In the Game of Thrones, you win or you die...but in the Games of GoT, you win or you just have fun!\
 The aim of this site is to allow users to wander a little in G. R. R. Martin's World of Ice & Fire and have some entertaining moments! Visitors can challenge their skills and test their knowledge by playing interactive games and solving tricky quizes. They can also learn about the great houses of Westeros, and even find their own great house!\
